@@ -1,0 +1,361 @@
+
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;  
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+header
+--------------------------------------------- 
+*/
+.nav-bar{
+    height: 15vh;
+    /* display: none; */
+    align-items: center;
+}
+
+.nav-bar ul li{
+    text-align: center;
+}
+
+.nav-bar li a{
+    color: #C2912A;
+    font-size: 1.5rem;
+
+}
+/* 无法在页面上面显示，去掉bootstrap之后重新设置 */
+#burger {
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  cursor: pointer;
+}
+
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+.nav-footer{
+  background-color: #EAE2D5;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.footer_top{
+  background-color: #EAE2D5;
+  padding-left: 2%;
+}
+
+.nav-footer a,.nav-footer h4{
+  color: #C2912A;
+}
+
+
+/* 
+---------------------------------------------
+accueil
+--------------------------------------------- 
+*/
+.image-accueil img{
+    width: 100vw;
+    height: auto;
+    margin-left: -1%;
+}
+
+/* about */
+.photo-about{
+    text-align: center;
+
+}
+
+.about img{
+    width: 20vw;
+    height: 15vw;
+    margin: 5%;
+    
+}
+
+.about-line{
+    border: 3px solid #C2912A;
+    border-right:none;
+    border-left:none;
+    border-bottom:none;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.text-about p{
+    margin-right: 20%;
+}
+
+
+
+
+
+/* 
+---------------------------------------------
+contact
+--------------------------------------------- 
+*/
+
+/* page de contact */
+.contact{
+  width: 50%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  border: 1px solid #C2912A;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.contact h1{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+/* confirmation de contact */
+
+.confirm-message{
+  width: 50%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  border: 1px solid #C2912A;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+/* http://huitrebretagne.test/index.php?action=getMessage */
+
+.confirm-message h1,.confirm-message h2,.confirm-message a{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+.confirm-message button{
+  border-color: #C2912A !important;
+  background-color: #C2912A;
+}
+
+.confirm-message a{
+  font-size: 1.5rem;
+}
+
+
+
+
+/* 
+---------------------------------------------
+connexion
+--------------------------------------------- 
+*/
+.connect{
+  width: 60%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  border: 1px solid #C2912A;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.connect h1,.connect h3{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+.connect button{
+  margin-top: 5%;
+  border: 1px solid #C2912A;
+
+}
+
+
+/* 
+---------------------------------------------
+huitres
+--------------------------------------------- 
+*/
+.huitres{
+  padding-top: 4%;
+  padding-bottom: 6%;
+  border: 1px solid #C2912A;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.huitres h1{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+
+.mt-100 {
+  margin-top: 100px
+}
+
+.product-wrapper,
+.product-img {
+  overflow: hidden;
+  position: relative
+}
+
+.mb-45 {
+  margin-bottom: 45px
+}
+
+.product-action {
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: all 0.6s ease 0s
+}
+
+.product-wrapper {
+  border-radius: 10px
+}
+
+
+.product-action-style {
+  background-color: #fff;
+  opacity: 0.8;
+  box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+  padding: 16px 2px 12px;
+  width: 100%;
+}
+
+.product-action-style a {
+  color: black;
+  line-height: 1;
+  padding: 0 21px;
+}
+
+.product-action-style a:hover {
+  color: black;
+}
+
+.product-wrapper:hover .product-action {
+  bottom: 20px;
+  opacity: 1
+}
+
+
+/* 
+---------------------------------------------
+blog
+--------------------------------------------- 
+*/
+
+.blog{
+  padding-top: 4%;
+  padding-bottom: 6%;
+  border: 1px solid #C2912A;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.blog h1{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+/* article */
+
+.article {
+padding-top: 4%;
+padding-bottom: 6%;
+border: 1px solid #C2912A;
+border-bottom: none;
+border-right: none;
+border-left: none;
+}
+
+.article h1{
+  color: #C2912A;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5%;
+}
+
+
+/* css 重做的时候不要忘记改掉categoryblog.js里面的d-block 和 d-none */
+/* .show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+} */
