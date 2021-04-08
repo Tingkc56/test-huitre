@@ -70,11 +70,11 @@ class BackController
             //set upload type
             $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
             // set upload path
-            $path="APP\public\back\images\hb";
+            $path="app\public\back\images\hb";
             // n'est pas encore utilisé (sera utilisé plus tard)
 
                 // spécifie le chemin du fichier à télécharger
-            $target_file = $path  . basename($upfile["name"]);
+            $target_file = $path . basename($upfile["name"]);
            // var_dump($target_file);
 
 
