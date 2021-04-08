@@ -1,0 +1,7 @@
+ErrorDocument 404 /app/views/front/404.php
+
+RewriteEngine On
+
+RewriteRule ^app\/([^\/]+)\/?$  index.php?action=$1 
+RewriteRule ^([A-Za-z]+)/([0-9]+)?$  index.php?action=$1&id=$2 
+RewriteRule ^admin\/([^\/]+)\/?$  hbAdmin.php?action=$1 [L]
