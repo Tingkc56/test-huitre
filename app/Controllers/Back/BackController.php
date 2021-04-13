@@ -318,8 +318,7 @@ class BackController
 
         $producers = new ProducerManager();
         $producer = $producers->getProducer($id);
-        var_dump($producer);
-        require 'app/views/back/editproducer.php';
+        require 'app/views/back/editProducer.php';
     }
 
     function deleteProducer($id){
