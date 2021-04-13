@@ -318,7 +318,7 @@ class BackController
 
         $producers = new ProducerManager();
         $producer = $producers->getProducer($id);
-        // var_dump($producer);
+        var_dump($producer);
         require 'app/views/back/editproducer.php';
     }
 

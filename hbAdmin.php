@@ -138,9 +138,9 @@ try{
             $backController ->updateProducer($id,$nomproducteur,$adresse,$tel,$huitre_n,$content,$alt,$target_file);
         }
 
-        elseif($_GET['action'] == 'editProducer'){
+        elseif($_GET['action'] =='editProducer'){
             $id = $_GET['id'];
-            $backController-> editProducer($id);
+            $backController->editProducer($id);
         }
 
         elseif($_GET['action'] == 'updateProducer'){

@@ -25,8 +25,8 @@
     <header>
         <div class="navbar-background">
             <nav class="navbar container flex-wrapper">
-                <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="APP\public\front\images\huitre-bretagne.png"
-                            alt="logo huitre bretagne"></a> <span class="text-logo">HUITRE BRETAGNE</span> </div>
+                <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="app\public\front\images\huitre-bretagne.png"
+                            alt="logo huitre bretagne"><span class="text-logo">HUITRE BRETAGNE</span> </a> </div>
                 <div class="navbar-toggler">
                     <!-- data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" -->
                     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
