@@ -19,9 +19,6 @@
     <loc>https://test-huitre.herokuapp.com/index.php?action=connect</loc>
   </url>
   <url>
-    <loc>http://ting-kc56.alwaysdata.net/projet-bio/projet-bio/blog1.php</loc>
-  </url>
-  <url>
-    <loc>http://ting-kc56.alwaysdata.net/projet-bio/projet-bio/blog2.php</loc>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=mention</loc>
   </url>
 </urlset>
