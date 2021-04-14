@@ -56,9 +56,9 @@ try{
         }elseif($_GET['action'] == 'disConnect'){
             $frontController ->disConnect();
         }
-        // elseif($_GET['action']=='admin'){
-        //     $frontController->admin(); 
-        //     }
+        elseif($_GET['action']=='userInfos'){
+            $frontController->userInfos(); 
+        }
         //留言的捕获
         elseif($_GET['action'] == 'getMessage'){
             $name = $_POST['name'];
@@ -85,6 +85,8 @@ try{
         }elseif($_GET['action']=='producer'){
             $id = $_GET['id'];
             $frontController->producer($id); 
+        }elseif($_GET['action']=='mention'){
+            $frontController->mention(); 
         }
 
     }else{

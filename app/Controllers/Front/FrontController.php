@@ -38,7 +38,9 @@ class FrontController{
         require 'app/views/front/accueil.php';
        }
 
-
+       function userInfos(){
+        require 'app/views/front/userInfo.php';
+       }
 
        // redirecting to connexion.php
         function contactPage($errors=array()){
@@ -109,7 +111,7 @@ class FrontController{
     function getComment($name,$comment,$id){
         $commentManager = new \Project\Models\CommentManager();
         $comment = $commentManager ->getComment($name,$comment,$id);
-        var_dump($comment);
+        //var_dump($comment);
 
             require 'app/views/front/confirmMessage.php';
     }
@@ -138,6 +140,10 @@ class FrontController{
         $producers = new \Project\Models\ProducerManager();
         $producer = $producers->getProducer($id);
         require 'app/views/front/producer.php';
+    }
+
+    function mention(){
+        require 'app/views/front/mention.php';
     }
 
 

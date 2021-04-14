@@ -26,16 +26,12 @@
                 <?php } ?>
             </div>
 
-            <form class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
-                <div>
+            <form id="comment" class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
                     <label for="comment">Votre commentaire:</label>
                     <textarea class="form-item" rows="5" id="comment" name="comment"></textarea>
-                </div>
-                <div>
                     <label for="usr">Votre nom:</label>
                     <input type="text" class="form-item" id="cmt-name" name="name">
-                </div>
-                <button type="submit" class="btn">Envoyer</button>
+                    <button type="submit" class="btn" onclick="return validateComments()">Envoyer</button>
             </form>
         </div>
 

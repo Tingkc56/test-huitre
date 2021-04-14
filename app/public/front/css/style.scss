@@ -89,16 +89,23 @@ footer
 .nav-footer{
   align-items: center;
   padding:2% 6%;
-  justify-content: space-between;
+  justify-content: space-between;    
+    .hidden{
+      display: none;
+  }
+  h5{
+    font-weight: normal;
+  }
 }
 
 .footer_top{
   padding-left: 2%;
 }
 
-.nav-footer a,.nav-footer h4{
-  color: #C2912A;
+.nav-footer a,.nav-footer h4,.foot-mention a{
+  color: $goldcolor;
 }
+
 
 
 /* 
@@ -191,7 +198,7 @@ producteur
 
 .producers{
   .btn{
-    @include goldButtom;
+    @include goldbutton;
   }
 
   .btn:hover{
@@ -223,7 +230,7 @@ blog
   article 
   {
     .btn{
-      @include goldButtom;
+      @include goldbutton;
     }
   }
 
@@ -247,7 +254,7 @@ blog
     min-height: 120px;
   }
   .btn{
-    @include goldButtom;
+    @include goldbutton;
     margin-top: 2%;
   }
 }
@@ -272,7 +279,7 @@ contact
   }
 
   .btn{
-    @include goldButtom;
+    @include goldbutton;
     margin-top: 2%;
   }
 }
@@ -310,7 +317,7 @@ connexion
     margin-bottom: 5%;
   }
   .btn{
-    @include goldButtom;
+    @include goldbutton;
     margin-top: 5%;
   }
 }
@@ -408,6 +415,18 @@ connexion
     .navbar-ul {
       margin-left: 5%;
       margin-top: 0%;
+    }
+  }
+/* ------ footer-----*/
+  .nav-footer{
+    .l-show{
+      display: block;
+    }
+    .foot-title{
+      display: none;
+    }
+    .foot-presentation{
+      margin-left: -10%;
     }
   }
 

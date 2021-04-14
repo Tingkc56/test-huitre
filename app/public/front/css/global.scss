@@ -292,13 +292,12 @@ padding-bottom: 4%;
 }
 
 .btn:hover {
-  color: rgba(36, 40, 41, 1);
   text-decoration: none;
 }
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(55, 61, 62, 0.28);
+  border: transparent;
 }
 
 /* ------ navbar --------------------------------------*/
@@ -540,6 +539,11 @@ padding-bottom: 4%;
 
 h1{
   @include title-h1; 
+}
+
+.gold-btn{
+  @include goldbutton;
+  margin-top: 5%;
 }
 
 

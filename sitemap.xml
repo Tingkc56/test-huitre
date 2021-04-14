@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+  <url>
+    <loc>https://test-huitre.herokuapp.com/</loc>
+  </url>
+  <url>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=huitres</loc>
+  </url>
+  <url>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=producers</loc>
+  </url>
+  <url>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=blog</loc>
+  </url>
+  <url>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=contact</loc>
+  </url>
+  <url>
+    <loc>https://test-huitre.herokuapp.com/index.php?action=connect</loc>
+  </url>
+  <url>
+    <loc>http://ting-kc56.alwaysdata.net/projet-bio/projet-bio/blog1.php</loc>
+  </url>
+  <url>
+    <loc>http://ting-kc56.alwaysdata.net/projet-bio/projet-bio/blog2.php</loc>
+  </url>
+</urlset>

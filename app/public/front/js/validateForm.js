@@ -82,3 +82,12 @@ function validateContact(){
        }
 
 }
+
+function validateComments(){
+
+  const comment = document.querySelector('#comment')
+  if (hasEmptyFields(comment)) {
+    alert("le champ ne peut pas être vide");
+    return false;
+  }
+}

@@ -65,11 +65,12 @@
         </div>
     </main>
 
+    <!-- footer -->
     <footer>
         <div class="foot-backgroud">
             <div class="food-top-line"></div>
         <div class="nav-footer flex-wrapper container">
-            <div class="flex-2-item-perline">
+            <div class="flex-3-item-perline-s flex-4-item-perline-l">
                 <ul>
                     <li><a href="/">Accueil</a></li>
                     <li><a href="index.php?action=huitres">Huitres</a></li>
@@ -78,7 +79,24 @@
                     <li><a href="index.php?action=contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="flex-2-item-perline">
+            <div class="flex-3-item-perline-s flex-4-item-perline-l foot-presentation">
+            <img class="hidden l-show img-fluid" src="app/public/front/images/huitre-bretagne.png" alt="huitre-bretagne">
+            <h4 class="foot-title" >Huitre Bretagne</h4>
+            <h5 class="hidden l-show">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis in ab vitae,
+                quis molestiae nobis commodi obcaecati!</h5>
+            <h5><a href="tel:+33268686868">02 68 68 68 68</a></h5>
+            <h5>info@huitre-bretagne.com</h5>
+        </div>
+        <div class="hidden l-show flex-4-item-perline-l">
+            <h4>Ma newsletter</h4>
+            <p>Retrouvez tous les mois nos infos, articles, recettes et nouveautés. Produits 100% BIO !</p>
+            <form action="" method="POST">
+                <input type="email" name="email" placeholder="Votre Email..."><br>
+                <input class="btn gold-btn" type="submit" value="Je m'inscris">
+            </form>
+        </div>
+            <div class="flex-3-item-perline-s flex-4-item-perline-l">
                 <h4>Suivez-nous</h4>
                 <ul>
                     <li><a href="/"></a>Facebook</li>
@@ -89,7 +107,7 @@
         </div>
         <div>
             <div class="footer_top container">
-                Tous doits réservés à 2021 - Huitre Bretagne - Tingting
+            <p class="foot-mention" >&copy; Huitre Bretagne 2021. Conditions générales d’utilisation et <a href="index.php?action=mention">mentions légales.</a></p>
             </div>
         </div>
         </div>

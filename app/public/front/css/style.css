@@ -366,13 +366,12 @@ global styles
 }
 
 .btn:hover {
-  color: #242829;
   text-decoration: none;
 }
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(55, 61, 62, 0.28);
+  border: transparent;
 }
 
 /* ------ navbar --------------------------------------*/
@@ -606,6 +605,12 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.gold-btn {
+  border: 1px solid #c2912a;
+  color: #c2912a;
+  margin-top: 5%;
+}
+
 /* 
 ---------------------------------------------
 header
@@ -690,13 +695,19 @@ footer
   padding: 2% 6%;
   justify-content: space-between;
 }
+.nav-footer .hidden {
+  display: none;
+}
+.nav-footer h5 {
+  font-weight: normal;
+}
 
 .footer_top {
   padding-left: 2%;
 }
 
-.nav-footer a, .nav-footer h4 {
-  color: #C2912A;
+.nav-footer a, .nav-footer h4, .foot-mention a {
+  color: #c2912a;
 }
 
 /* 
@@ -956,6 +967,17 @@ connexion
   .navbar-collapse .navbar-ul {
     margin-left: 5%;
     margin-top: 0%;
+  }
+
+  /* ------ footer-----*/
+  .nav-footer .l-show {
+    display: block;
+  }
+  .nav-footer .foot-title {
+    display: none;
+  }
+  .nav-footer .foot-presentation {
+    margin-left: -10%;
   }
 
   /* ------ accueil-----*/
