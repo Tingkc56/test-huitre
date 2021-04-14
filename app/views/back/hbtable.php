@@ -35,12 +35,6 @@
     <h3><a href="hbAdmin.php?action=commentaires">Gerer mes commentaires</a></h3>    
     </div>
   </div>
-  
-  <div class="card bg-info">
-    <div class="card-body text-center">
-    <h3><a href="">Gerer les Administrateurs</a></h3>  
-    </div>
-  </div>
 
 </div>
 </section>

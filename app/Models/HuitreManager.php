@@ -11,13 +11,6 @@ class HuitreManager extends Manager{
         return $newHuitre;
     }
 
-// Front pour afficher les types de huitre
-    // public function getTypeHuitre($id){
-    //     $bdd = $this->bdConnect();
-    //     $req = $bdd->prepare('SELECT * FROM producers WHERE huitre_id=?');
-    //     $req->execute(array($id));
-    //     return $req;
-    // }
 
 //back admin huitres
     public function getHuitres(){
@@ -39,12 +32,14 @@ class HuitreManager extends Manager{
 
     public function updateHuitre($id,$nomHuitre,$content,$target_file){
         $bdd = $this->bdConnect();
+        var_dump($bdd);
         $updateHuitre = $bdd->prepare("UPDATE huitres SET h_name = :h_name , h_content = :h_content , img = :img WHERE id = :id");
+        var_dump($updateHuitre);
         $updateHuitre ->execute([
             'id' => $id,
-            'h_name ' => $nomHuitre,
+            'h_name' => $nomHuitre,
             'h_content' => $content,
-            'img' =>$target_file
+            'img' => $target_file
             ]); 
             return $updateHuitre;
         }

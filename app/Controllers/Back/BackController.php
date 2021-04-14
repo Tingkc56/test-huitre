@@ -161,7 +161,7 @@ class BackController
                     //set upload type
                     $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
                     // set upload path
-                    $path="app\public\back\images\hb";
+                    $path="app\public\\front\images\\";
                     // n'est pas encore utilisé (sera utilisé plus tard)
 
                         // spécifie le chemin du fichier à télécharger
@@ -188,7 +188,7 @@ class BackController
                                     if($id>0){
                                         $huitres = new HuitreManager();
                                         $updateHuitre = $huitres->updateHuitre($id,$nomHuitre,$content,$target_file);
-                                
+                                        var_dump($target_file);
                                         header('Location: hbAdmin.php?action=huitres');
                                     }else{
                                         $huitres = new HuitreManager();
@@ -256,7 +256,7 @@ class BackController
             //set upload type
             $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
             // set upload path
-            $path="app\public\back\images\hb";
+            $path="app\public\\front\images\\";
             // n'est pas encore utilisé (sera utilisé plus tard)
 
                 // spécifie le chemin du fichier à télécharger

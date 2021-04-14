@@ -12,12 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <!-- style sheet -->
     <link rel="stylesheet" href="app\public\front\css\style.css">
-    <!-- Bootstrap CSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="app\public\front\images\favicon.ico">
+        
     <title>Huîltre Bretagne</title>
 </head>
 
@@ -26,9 +26,8 @@
         <div class="navbar-background">
             <nav class="navbar container flex-wrapper">
                 <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="app\public\front\images\huitre-bretagne.png"
-                            alt="logo huitre bretagne"><span class="text-logo">HUITRE BRETAGNE</span> </a> </div>
+                            alt="huitre bretagne"><span class="text-logo">HUITRE BRETAGNE</span> </a> </div>
                 <div class="navbar-toggler">
-                    <!-- data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" -->
                     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
                 </div>
                 <div class="navbar-collapse" id="navbarCollapse">

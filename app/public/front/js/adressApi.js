@@ -3,7 +3,6 @@
  var addressContainer = document.getElementById('container');
 
  let address = document.querySelector('#address')
- 
  //get the key word of the input adresse
  address.addEventListener('input',function(){
     let addressUrl = address.value.split(" ").join('+');

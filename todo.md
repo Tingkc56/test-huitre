@@ -1,9 +1,16 @@
-css
+*repaire js category onclick btn.active
+*bdd local if else
+*photo
+*une page compte
+*pied
+*backend-css
+*clean
+*map
+*readme
+*sql a changer
 
-* oocss 需要掌控好结构，整体来架构，这样可以提高css的复用性
-* sass
-
-
+bugs:
+*always a favicon not found
 
 plus 
 
@@ -16,11 +23,6 @@ php
 js
 
 * poo
-* api: API map Bing: option
-    1. can't remove the script from html
-    2. how to set click -> foreach producers(php $variable)
-    3. how to set mouseover (same problem)
-
 * test unitaire
 
 
