@@ -2,38 +2,34 @@
 
 <section>
 
-    <div class="article_about">
-        <h2>Liste des huitres</h2>
+        <h1 class="text-center" >Gérer vos huitres</h1>
 
 
-        <div class="createPresta">
-            <a class="btn_create" href="hbAdmin.php?action=addHuitre">Ajouter huitre</a>
+        <div class="text-center">
+            <a class="btn green-btn" href="hbAdmin.php?action=addHuitre">Ajouter huitre</a>
         </div>
         <br>
-        <section id="gallery">
-            <div class="container">
-                <div class="row">
+        <div class="admin-huitre">
                 <?php foreach($allHuitres as $allHuitre){?>
-                    <div class="col-lg-3 mb-3">
-                        <div class="card">
-                            <img src="<?=htmlspecialchars($allHuitre['img']) ?>"
-                                alt="<?=htmlspecialchars($allHuitre['h_name']) ?>" class="card-img-top">
-                            <div class="card-body">
-                                <h5><?=htmlspecialchars($allHuitre['h_name']) ?></h5>
-                                <p class="card-text"><?=htmlspecialchars($allHuitre['h_content']) ?> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
-                                    similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore
-                                    modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                                <a href="hbAdmin.php?action=editHuitre&id=<?= $allHuitre['id'] ?>" class="btn btn-outline-success btn-sm">Editer</a>
-                                <a href="hbAdmin.php?action=deleteHuitre&id=<?= $allHuitre['id'] ?>" class="btn btn-outline-danger btn-sm">Supprimer</a>
-                            </div>
+                    <article class="case">
+                        <div class="case-img flex-1-item-perline-s flex-2-item-perline-m text-center">
+                            <img class="img-fluid img-br-10px admin-huitre-image m-auto" src="<?=htmlspecialchars($allHuitre['img']) ?>"
+                                alt="<?=htmlspecialchars($allHuitre['alt']) ?>">
                         </div>
-                    </div>
+
+                        <div class="case-body flex-1-item-perline-s flex-2-item-perline-m">
+                            <h3 class="case-title text-center"><?=htmlspecialchars($allHuitre['h_name']) ?></h3>
+                            <p class=""><?=htmlspecialchars($allHuitre['h_content']) ?></p>
+                            <div class="flex-wrapper flex-space-between">
+                                <a href="hbAdmin.php?action=editHuitre&id=<?= $allHuitre['id'] ?>" class="btn yellow-btn flex-2-item-perline-s">Editer</a>
+                                <a href="hbAdmin.php?action=deleteHuitre&id=<?= $allHuitre['id'] ?>" class="btn red-btn flex-2-item-perline-s">Supprimer</a>
+                            </div>
+
+                        </div>  
+                    </article>
                  <?php } ?>
                 </div>
-            </div>
-        </section>
 
-    </div>
 </section>
 
 

@@ -1,29 +1,30 @@
 <?php ob_start(); ?>
 
-        <section id="gallery">
-        <h2>Les commentaires que vous avez recu</h2>
-            <div class="container">
-                <div class="row">
-                <?php foreach($allComments as $allComment){?>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Commentaire pour: <br><?=htmlspecialchars($allComment['title']) ?></h3>
-                                <p class="card-text"><?=htmlspecialchars($allComment['content']) ?></p>
-                                <p>Par : <strong><?=htmlspecialchars($allComment['nom']) ?></strong> </p>
-                                <p>A : <?=htmlspecialchars($allComment['cmt_time']) ?></p>
-                                <p class="card-text"> <strong>ID de article :</strong><?=htmlspecialchars($allComment['article_id']) ?></p>
-                                <p class="card-text"><strong>Contenu de article :</strong><?=htmlspecialchars($allComment['article']) ?></p>
-                                <a href="hbAdmin.php?action=deleteComment&id=<?= $allComment['id'] ?>" class="btn btn-outline-danger btn-sm">Supprimer</a>
-                            </div>
-                        </div>
-                    </div>
-                 <?php } ?>
+
+<section>
+<h1 class="text-center" >Gérer mes commentaires</h1>
+
+        <div class="flex-wrapper">
+        <?php foreach($allComments as $allComment){?>
+                <div class="flex-1-item-perline-s flex-2-item-perline-m flex-3-item-perline-l">
+            <article class="case">
+                <div class="case-body">
+                    <h4 class="case-title">Commentaire pour: <br><?=htmlspecialchars($allComment['title']) ?></h4>
+                    <h5>Par :<?=htmlspecialchars($allComment['nom']) ?></h5>
+                    <h5>Recu : <?=htmlspecialchars($allComment['cmt_time']) ?></h5> 
+                    <p class="case-text"><strong>Commentaire :</strong><?=htmlspecialchars($allComment['content']) ?></p>
+                    <p class="case-text"> <strong>ID de article :</strong><?=htmlspecialchars($allComment['article_id']) ?></p>
+                    <p class="case-text"><strong>Contenu de article :</strong><?=htmlspecialchars($allComment['article']) ?></p>
+                    <div class="btn_gestion">
+                    <a class="btn red-btn" href="hbAdmin.php?action=deleteComment&id=<?= $allComment['id'] ?>">Supprimer</a>
                 </div>
-            </div>
-        </section>
-
-
+                </div>
+            </article>
+        </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>
 
 <?php $content = ob_get_clean(); ?>
 <!-- fonction php pour injecter le template -->

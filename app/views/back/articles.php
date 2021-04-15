@@ -1,39 +1,35 @@
 <?php ob_start(); ?>
 
+
 <section>
+        <h1 class="text-center" >Gérer vos articles</h1>
 
-    <div class="article_about">
-        <h2>Liste des articles</h2>
-
-
-        <div class="createPresta">
-            <a class="btn_create" href="hbAdmin.php?action=addArticle">Creation d'un nouvel article</a>
+        <div class="text-center">
+            <a class="btn green-btn" href="hbAdmin.php?action=addArticle">Créer un nouvel article</a>
         </div>
         <br>
-        <section id="gallery">
-            <div class="container">
-                <div class="row">
-                <?php foreach($allArticles as $allArticle){?>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="<?=htmlspecialchars($allArticle['img']) ?>"
-                                alt="<?=htmlspecialchars($allArticle['title']) ?>" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title"><?=htmlspecialchars($allArticle['title']) ?></h5>
-                                <p class="card-text"><?=htmlspecialchars($allArticle['content']) ?> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
-                                    similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore
-                                    modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                                <a href="hbAdmin.php?action=editArticle&id=<?= $allArticle['id'] ?>" class="btn btn-outline-success btn-sm">Editer</a>
-                                <a href="hbAdmin.php?action=deleteArticle&id=<?= $allArticle['id'] ?>" class="btn btn-outline-danger btn-sm">Supprimer</a>
-                            </div>
+        <div class="admin-blog">
+            <!-- foreach all articles -->
+        <?php foreach($allArticles as $allArticle){?>
+                    <article class="case">
+                        <div class="case-img flex-1-item-perline-s flex-2-item-perline-m text-center">
+                            <img class="img-fluid img-br-10px admin-huitre-image m-auto" 
+                            src="<?=htmlspecialchars($allArticle['img']) ?>"
+                            alt="<?=htmlspecialchars($allArticle['alt']) ?>" >
                         </div>
-                    </div>
+
+                        <div class="case-body flex-1-item-perline-s flex-2-item-perline-m">
+                            <h3 class="case-title"><?=htmlspecialchars($allArticle['title']) ?></h3>
+                            <p class=""><?=htmlspecialchars($allArticle['content']) ?></p>
+                            <div class="flex-wrapper flex-space-between">
+                            <a href="hbAdmin.php?action=editArticle&id=<?= $allArticle['id'] ?>" class="btn yellow-btn flex-2-item-perline-s">Editer</a>
+                                <a href="hbAdmin.php?action=deleteArticle&id=<?= $allArticle['id'] ?>" class="btn red-btn flex-2-item-perline-s">Supprimer</a>
+                            </div>
+
+                        </div>  
+                    </article>
                  <?php } ?>
                 </div>
-            </div>
-        </section>
-
-    </div>
 </section>
 
 

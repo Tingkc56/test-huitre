@@ -1,42 +1,29 @@
 <?php ob_start(); ?>
 
-<h1 class="text-center">Tableau de bord <?= $_SESSION['name'] ?></h1>
+<h1 class="text-center">Accueil</h1>
 
-<section class="card_gestion">
+<section class="admin-accueil text-center">
 
-<div class="card-deck">
-
-  <div class="card bg-warning">
-    <div class="card-body text-center">
-    <h3><a href="hbAdmin.php?action=articles">Gerer mes articles</a></h3>  
-    </div>
-  </div>
-
-  <div class="card bg-primary">
-    <div class="card-body text-center">
-    <h3><a href="hbAdmin.php?action=huitres">Gerer mes huitres</a></h3>    
-    </div>
-  </div>
-
-  <div class="card bg-secondary">
-    <div class="card-body text-center">
-    <h3><a href="hbAdmin.php?action=producers">Gerer mes producteurs</a></h3>    
-    </div>
-  </div>
-
-  <div class="card bg-success ">
-    <div class="card-body text-center">
-    <h3><a href="hbAdmin.php?action=messages">Gerer mes messages</a></h3>    
-    </div>
-  </div>
-
-  <div class="card bg-danger">
-    <div class="card-body text-center">
-    <h3><a href="hbAdmin.php?action=commentaires">Gerer mes commentaires</a></h3>    
-    </div>
-  </div>
-
-</div>
+    <ul class="admin-accueil-ul m-auto">
+                        <li ><a 
+                                href="hbAdmin.php?action=accueilAdmin">Accueil</a></li>
+                        <li ><a href="hbAdmin.php?action=messages">Gérer
+                                mes message</a></li>
+                        <li ><a href="hbAdmin.php?action=huitres">Gérer
+                                les Huitres</a></li>
+                        <li ><a 
+                                href="hbAdmin.php?action=producers">Gérer
+                                les Producteurs</a></li>
+                        <li ><a  href="hbAdmin.php?action=articles">Gérer les
+                                mon blog</a>
+                        </li>
+                        <li ><a 
+                                href="hbAdmin.php?action=commentaires">Gérer
+                                mes commentaires</a></li>
+                        <li >
+                            <a href="hbAdmin.php?action=deconnexion">Deconnexion</a>
+                        </li>
+                    </ul>
 </section>
 
 <?php $content = ob_get_clean(); ?>

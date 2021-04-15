@@ -12,6 +12,7 @@ global styles
   margin-left: auto;
 }
 
+
 .strong {
   font-weight: bolder;
 }
@@ -56,6 +57,19 @@ padding-right: 0.8%;
 padding-bottom: 4%;
   }
 }
+
+.flex-space-between{
+  justify-content: space-between;
+}
+
+.flex-space-around{
+  justify-content: space-around;
+}
+
+.flex-center{
+  justify-content: center;
+}
+
 
 /* ------ media-*/
 
@@ -391,6 +405,11 @@ padding-bottom: 4%;
   background-size: 100% 100%;
 }
 
+.nav-position-fix{
+  position: fixed;
+  top: 0;
+}
+
 /* ------ article-page --------------------------------------*/
 .article-page{
   display: flex;
@@ -545,6 +564,22 @@ h1{
   @include goldbutton;
   margin-top: 5%;
 }
+
+.red-btn{
+  border: 1px solid red;
+  color: red;
+}
+
+.yellow-btn{
+  border: 1px solid orange;
+  color: orange;
+}
+
+.green-btn{
+  border: 1px solid green;
+  color: green;
+}
+
 
 
 

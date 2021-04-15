@@ -36,7 +36,7 @@
                     <label for="c-pass">Mot de pass:</label>
                     <input type="password" class="form-item in-psw" name="pass" id="c-pass">
 
-                    <button class="btn" type="submit" onclick="return validateSignIn()" class="btn btn-default">Valider</button>
+                    <button type="submit" onclick="return validateSignIn()" class="btn btn-default">Valider</button>
             </form>
         </div>
 

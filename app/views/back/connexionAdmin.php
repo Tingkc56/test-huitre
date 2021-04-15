@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="app\public\back\css\style.css">
     <title>Connexion Admin</title>
 </head>
 
 <body>
-    <h1>Connexion Administrateur</h1>
-        <div id="connexion form-group" >
-            <form action="hbAdmin.php?action=connexionAdmin" method="post">
-                <div>
-                <h2 class="text-center">Connectez-vous</h2>
-                    <label for="mail">Email:</label>
-                    <input type="mail" name="mail" class="form-control mail" id="mail">
 
-                    <label for="pass">Mot de pass:</label>
-                    <input type="password" name="pass" class="form-control" id="pass">
+    <div class="container">
 
-                <button type="submit" class="btn btn-default">Valider</button>
+
+        <section id="connexion-admin" class="connexion-admin m-auto">
+            <h1 class="text-center">Connexion Admin Huitre Bretagne</h1>
+            <form id="sign-in-admin" action="hbAdmin.php?action=connexionAdmin" method="post">
+                <h3 class="text-center">Connectez-vous</h3>
+                <label for="c-mail">Email:</label>
+                <input type="text" class=" form-item mail" name="mail" id="c-mail">
+
+                <label for="c-pass">Mot de pass:</label>
+                <input type="password" class="form-item in-psw" name="pass" id="c-pass">
+
+                <button type="submit" onclick="return validateSignIn()" class="btn btn-default">Valider</button>
             </form>
-        </div>
-
+                <a class="btn" href="/">Retour a l'accueil</a>
+        </section>
     </div>
-<br>
-<br>
-    <div class="retour">
-        <a href="/">Retour a l'accueil</a>
-    </div>
-
 </body>
 
 </html>

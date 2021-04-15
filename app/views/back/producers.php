@@ -1,41 +1,35 @@
 <?php ob_start(); ?>
-
 <section>
+        <h1 class="text-center" >Gérer vos producteurs</h1>
 
-    <div class="article_about">
-        <h2>Liste des Producteurs</h2>
-
-
-        <div class="createPresta">
-            <a class="btn_create" href="hbAdmin.php?action=addProducer">Ajouter producteur</a>
+        <div class="text-center">
+            <a class="btn green-btn" href="hbAdmin.php?action=addProducer">Ajouter producteur</a>
         </div>
         <br>
-        <section id="gallery">
-            <div class="container">
-                <div class="row">
-                <?php foreach($allProducers as $allProducer){?>
-                    <div class="col-lg-3 mb-3">
-                        <div class="card">
-                            <img src="<?=htmlspecialchars($allProducer['img']) ?>"
-                                alt="<?=htmlspecialchars($allProducer['p_name']) ?>" class="card-img-top">
-                            <div class="card-body">
-                                <h5><?=htmlspecialchars($allProducer['p_name']) ?></h5>
-                                <h6>TEL: <?=htmlspecialchars($allProducer['tel']) ?></h6>
-                                <h6>Adresse : <?=htmlspecialchars($allProducer['adresse']) ?></h6>
-                                <p class="card-text"><?=htmlspecialchars($allProducer['p_content']) ?> </p>
-                                <a href="hbAdmin.php?action=editProducer&id=<?= $allProducer['id'] ?>" class="btn btn-outline-success btn-sm">Editer</a>
-                                <a href="hbAdmin.php?action=deleteProducer&id=<?= $allProducer['id'] ?>" class="btn btn-outline-danger btn-sm">Supprimer</a>
-                            </div>
+        <div class="admin-producer">
+        <?php foreach($allProducers as $allProducer){?>
+                    <article class="case">
+                        <div class="case-img flex-1-item-perline-s flex-2-item-perline-m text-center">
+                            <img class="img-fluid img-br-10px admin-huitre-image m-auto" src="<?=htmlspecialchars($allProducer['img']) ?>"
+                                alt="<?=htmlspecialchars($allProducer['alt']) ?>">
                         </div>
-                    </div>
+
+                        <div class="case-body flex-1-item-perline-s flex-2-item-perline-m">
+                            <h3 class="case-title"><?=htmlspecialchars($allProducer['p_name']) ?></h3>
+                            <h3>TEL: <?=htmlspecialchars($allProducer['tel']) ?></h3>
+                            <h3>Adresse : <?=htmlspecialchars($allProducer['adresse']) ?></h3>
+                            <p class=""><?=htmlspecialchars($allProducer['p_content']) ?></p>
+                            <div class="flex-wrapper flex-space-between">
+                                <a href="hbAdmin.php?action=editProducer&id=<?= $allProducer['id'] ?>" class="btn yellow-btn flex-2-item-perline-s">Editer</a>
+                                <a href="hbAdmin.php?action=deleteProducer&id=<?= $allProducer['id'] ?>" class="btn red-btn flex-2-item-perline-s">Supprimer</a>
+
+                            </div>
+
+                        </div>  
+                    </article>
                  <?php } ?>
                 </div>
-            </div>
-        </section>
-
-    </div>
 </section>
-
 
 
 <?php $content = ob_get_clean(); ?>
