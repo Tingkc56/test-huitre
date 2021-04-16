@@ -138,9 +138,6 @@ accueil
 huitres
 --------------------------------------------- 
 */
-.huitre{
-
-}
 
 .product-wrapper,
 .product-img {
@@ -267,7 +264,6 @@ contact
 
 /* page de contact */
 .contact{
-  width: 60%;
   padding-top: 4%;
   padding-bottom: 6%;
   border-bottom: none;
@@ -310,7 +306,6 @@ connexion
 --------------------------------------------- 
 */
 .connect{
-  width: 80%;
   padding-top: 4%;
   padding-bottom: 6%;
   h3{
@@ -391,7 +386,6 @@ connexion
 
 
 
-
  /* ------ producer-----*/
  .producer{
    h1{
@@ -399,7 +393,10 @@ connexion
    }
  }
 
-/* ------ blog-----*/
+ /* ------ contact-----*/
+ .contact{
+  width: 60%;
+}
 
 
 
@@ -484,12 +481,26 @@ connexion
   opacity: 1
 }
 
+/* ------ connexion-----*/
+.connect{
+  width: 80%;
+}
 
 }
 
 /* -@media 3 ----------------max screen -------------------------- */
 
 @media screen and (min-width: 1200px) {
+
+   /* ------ contact-----*/
+ .contact{
+  width: 50%;
+}
+
+/* ------ connexion-----*/
+.connect{
+  width: 60%;
+}
 
 
 }

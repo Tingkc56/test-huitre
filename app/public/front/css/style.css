@@ -146,6 +146,18 @@ global styles
   padding-bottom: 4%;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
 /* ------ media-*/
 @media screen and (max-width: 768px) {
   .flex-1-item-perline-s {
@@ -463,6 +475,11 @@ global styles
   background-size: 100% 100%;
 }
 
+.nav-position-fix {
+  position: fixed;
+  top: 0;
+}
+
 /* ------ article-page --------------------------------------*/
 .article-page {
   display: flex;
@@ -599,9 +616,12 @@ global styles
   margin: auto;
 }
 
+.m-top-5 {
+  margin-top: 5%;
+}
+
 h1 {
   color: #c2912a;
-  font: bold 2.5rem "Cormorant Garamond", serif;
   margin-bottom: 0.5rem;
 }
 
@@ -609,6 +629,21 @@ h1 {
   border: 1px solid #c2912a;
   color: #c2912a;
   margin-top: 5%;
+}
+
+.red-btn {
+  border: 1px solid red;
+  color: red;
+}
+
+.yellow-btn {
+  border: 1px solid orange;
+  color: orange;
+}
+
+.green-btn {
+  border: 1px solid green;
+  color: green;
 }
 
 /* 
@@ -723,7 +758,6 @@ accueil
 
 .welcome h1 {
   color: #c2912a;
-  font: bold 2.5rem "Cormorant Garamond", serif;
   margin-bottom: 0.5rem;
 }
 .welcome h2 {
@@ -840,7 +874,6 @@ contact
 */
 /* page de contact */
 .contact {
-  width: 60%;
   padding-top: 4%;
   padding-bottom: 6%;
   border-bottom: none;
@@ -879,7 +912,6 @@ connexion
 --------------------------------------------- 
 */
 .connect {
-  width: 80%;
   padding-top: 4%;
   padding-bottom: 6%;
 }
@@ -956,7 +988,10 @@ connexion
     margin-bottom: 20%;
   }
 
-  /* ------ blog-----*/
+  /* ------ contact-----*/
+  .contact {
+    width: 60%;
+  }
 }
 /* -@media 3  -------big screen------------------ */
 @media screen and (min-width: 992px) {
@@ -1032,7 +1067,23 @@ connexion
     bottom: 20px;
     opacity: 1;
   }
+
+  /* ------ connexion-----*/
+  .connect {
+    width: 80%;
+  }
 }
 /* -@media 3 ----------------max screen -------------------------- */
+@media screen and (min-width: 1200px) {
+  /* ------ contact-----*/
+  .contact {
+    width: 50%;
+  }
+
+  /* ------ connexion-----*/
+  .connect {
+    width: 60%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
