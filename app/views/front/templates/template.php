@@ -25,7 +25,7 @@
     <header>
         <div class="navbar-background">
             <nav class="navbar container flex-wrapper">
-                <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="app\public\front\images\huitre-bretagne.png"
+                <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="app/public/front/images/huitre-bretagne.png"
                             alt="huitre bretagne"><span class="text-logo">HUITRE BRETAGNE</span> </a> </div>
                 <div class="navbar-toggler">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
@@ -92,7 +92,7 @@
         <div class="hidden l-show flex-4-item-perline-l">
             <h4>Ma newsletter</h4>
             <p>Retrouvez tous les mois nos infos, articles, recettes et nouveautés. Produits 100% BIO !</p>
-            <form action="" method="POST">
+            <form method="POST">
                 <input type="email" name="email" placeholder="Votre Email..."><br>
                 <input class="btn gold-btn" type="submit" value="Je m'inscris">
             </form>
