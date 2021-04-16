@@ -804,6 +804,10 @@ huitres
   padding: 0 21px;
 }
 
+.product-img img {
+  width: 70%;
+}
+
 /* ------huitre detail page-----*/
 /* ------ huitre-----*/
 @media screen and (max-width: 400px) {
@@ -1030,6 +1034,11 @@ connexion
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem;
+  }
+
+  /* ------ huitre-----*/
+  .product-img img {
+    width: 100%;
   }
 
   /* ------ blog-----*/

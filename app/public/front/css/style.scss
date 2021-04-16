@@ -171,6 +171,12 @@ huitres
   padding: 0 21px;
 }
 
+
+.product-img{
+  img{
+    width: 70%;
+  }
+}
 /* ------huitre detail page-----*/
 
  /* ------ huitre-----*/
@@ -444,6 +450,12 @@ connexion
     -o-border-radius: 0.8rem;
 }
 
+/* ------ huitre-----*/
+.product-img{
+  img{
+    width: 100%;
+  }
+}
 /* ------ blog-----*/
 
 .product-wrapper{
