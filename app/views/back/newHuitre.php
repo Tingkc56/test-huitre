@@ -1,38 +1,24 @@
 <?php ob_start(); ?>
-<section>
+<section class="new-huitre">
+        <h1 class="text-center" >Ajouter votre huitre</h1>
 
-    <div class="article_about">
-        <h2>Ajouter votre huitre</h2>
+        <form class="text-center" action="hbAdmin.php?action=newHuitre" enctype="multipart/form-data" method="post">
 
-        <form action="hbAdmin.php?action=newHuitre" enctype="multipart/form-data" method="post">
-
-            <div class="form-article text-center">
-
-                <div class="article_title text-center">
                     <label for="title">Nom de Huitre</label>
-                    <input type="text" id="title" name="title">
-                </div>
+                    <input  class="form-item" type="text" id="title" name="title">
 
-                <div class="text_content">
                     <label for="content">Description de Huitre</label><br>
-                    <textarea class="content" name="content" id="content" cols="30" rows="10"></textarea>
-                </div>
+                    <textarea  class="form-item" class="content" name="content" id="content" cols="30" rows="10"></textarea>
 
-                <br>
-                <div class="huitre_alt">
                     <label for="alt">alt d'image</label><br>
-                    <input type="text" id="alt" name="alt">
-                </div>
-                <br>
-                <div class="huitre_img">
+                    <input  class="form-item" type="text" id="alt" name="alt">
+
                     <input type="file" class="img" name="img">
+
+
+                    <div class="text-center m-top-5">
+                    <input type="submit" class="btn green-btn " name="submit" id="upload">
                 </div>
-
-            </div>
-
-            <div class="subBtn">
-                <input type="submit" class="btn btn-secondary" name="submit" id="upload">
-            </div>
         </form>
     </div>
 

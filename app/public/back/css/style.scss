@@ -114,6 +114,21 @@ admin acceuil
 } 
 }
 
+ /* ------ admin-edit -----*/ 
+ .edit-article,.edit-huitre,.edit-producer{
+  textarea{
+    height: auto;
+  }
+  padding-bottom: 5%;
+}
+
+/* ------ admin-new -----*/ 
+.new-article,.new-huitre,.new-producer{
+  textarea{
+    height: auto;
+  }
+  padding-bottom: 5%;
+}
 
 
 /* -@media 2 ------------middle scree----------------------- */
@@ -181,6 +196,15 @@ admin acceuil
     height:25vh;
 } 
 }
+
+ /* ------ admin-edit-----*/ 
+ .edit-article,.edit-huitre,.edit-producer{
+  .admin-edit-img{
+    max-width: 30%;
+  }
+}
+
+
       
 }
 

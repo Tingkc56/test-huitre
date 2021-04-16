@@ -616,6 +616,10 @@ global styles
   margin: auto;
 }
 
+.m-top-5 {
+  margin-top: 5%;
+}
+
 h1 {
   color: #c2912a;
   margin-bottom: 0.5rem;
@@ -745,6 +749,22 @@ admin acceuil
   height: 25vh;
 }
 
+/* ------ admin-edit -----*/
+.edit-article, .edit-huitre, .edit-producer {
+  padding-bottom: 5%;
+}
+.edit-article textarea, .edit-huitre textarea, .edit-producer textarea {
+  height: auto;
+}
+
+/* ------ admin-new -----*/
+.new-article, .new-huitre, .new-producer {
+  padding-bottom: 5%;
+}
+.new-article textarea, .new-huitre textarea, .new-producer textarea {
+  height: auto;
+}
+
 /* -@media 2 ------------middle scree----------------------- */
 @media screen and (min-width: 768px) {
   .right-container {
@@ -802,6 +822,11 @@ admin acceuil
   }
   .admin-huitre .admin-huitre-image, .admin-blog .admin-huitre-image, .admin-producer .admin-huitre-image {
     height: 25vh;
+  }
+
+  /* ------ admin-edit-----*/
+  .edit-article .admin-edit-img, .edit-huitre .admin-edit-img, .edit-producer .admin-edit-img {
+    max-width: 30%;
   }
 }
 /* -@media 3  -------big screen------------------ */

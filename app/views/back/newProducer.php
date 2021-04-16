@@ -1,58 +1,38 @@
 <?php ob_start(); ?>
-<section>
+<section class="new-producer">
+        <h1 class="text-center" >Ajouter un producteur</h1>
 
-    <div class="producers">
-        <h2>Ajouter un Producteur</h2>
+        <form class="text-center"  action="hbAdmin.php?action=newProducer" enctype="multipart/form-data" method="post">
 
-        <form action="hbAdmin.php?action=newProducer" enctype="multipart/form-data" method="post">
+                <label for="name">Nom de Producteur</label>
+                <input  class="form-item" type="text" id="name" name="name">
 
-            <div class="form-article text-center">
-
-                <div class="name text-center">
-                <h4>Nom de producteur</h4>
-                <input type="text" id="name" name="name">
-                </div>
-
-                <div class="adresse">
                     <label for="adresse">Son adresse</label><br>
-                    <textarea  name="adresse" id="adresse" cols="30" rows="4"></textarea>
-                </div>
+                    <textarea   class="form-item" name="adresse" id="adresse" cols="30" rows="4"></textarea>
 
-                <div class="text_content">
                     <label for="content">Son numero de telephone</label><br>
-                    <input type="text" id="tel" name="tel">
-                </div>
+                    <input class="form-item"  type="text" id="tel" name="tel">
 
                 <div class="select-producer text-center">
-                    <h4>Ses huitres</h4>
-                    <select name="huitre_n" id="">
+                <label for="select-producer">Ses huitres</label>
+                    <select  class="form-item" name="huitre_n" id="select-producer">
                     <?php foreach($allHuitres as $allHuitre){?>
                         <option  value="<?= $allHuitre['id'] ?>"><?=htmlspecialchars($allHuitre['h_name']) ?></option>
                 <?php } ?>
                 </select>
                 </div>
 
-                <div class="text_content">
                     <label for="content">Presentation de producteur</label><br>
-                    <textarea class="content" name="content" id="content" cols="30" rows="10"></textarea>
-                </div>
-
-                <br>
-                <div class="huitre_alt">
+                    <textarea  class="form-item" class="content" name="content" id="content" cols="30" rows="10"></textarea>
                     <label for="alt">alt d'image</label>
-                    <input type="text" id="alt" name="alt">
-                </div>
-                <br>
+                    <input  class="form-item" type="text" id="alt" name="alt">
 
-                <div class="huitre_img">
                     <input type="file" class="img" name="img">
+
+
+                    <div class="text-center m-top-5">
+                    <input type="submit" class="btn green-btn " name="submit" id="upload">
                 </div>
-
-            </div>
-
-            <div class="subBtn">
-                <input type="submit" class="btn btn-secondary" name="submit" id="upload">
-            </div>
         </form>
     </div>
 

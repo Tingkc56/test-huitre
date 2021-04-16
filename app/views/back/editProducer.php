@@ -1,29 +1,19 @@
 <?php ob_start(); ?>
-<section>
+<section class="edit-producer">
+        <h1 class="text-center" >Editer producteur</h1>
 
-    <div class="article_about">
-        <h2>Editer producteur</h2>
+        <form class="text-center" action="hbAdmin.php?action=updateProducer&id=<?= $producer['id'] ?>" enctype="multipart/form-data" method="post">
 
-        <form action="hbAdmin.php?action=updateProducer&id=<?= $producer['id'] ?>" enctype="multipart/form-data" method="post">
-
-            <div class="form-article">
-
-                <div class=" text-center">
                     <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" value="<?= htmlspecialchars($producer['p_name']) ?>">
-                </div>
-                <div class="text-center">
+                    <input class="form-item" type="text" id="name" name="name" value="<?= htmlspecialchars($producer['p_name']) ?>">
                     <label for="tel">Tel</label>
-                    <input type="text" id="tel" name="tel" value="<?= htmlspecialchars($producer['tel']) ?>">
-                </div>
-                <div class=" text-center">
+                    <input class="form-item" type="text" id="tel" name="tel" value="<?= htmlspecialchars($producer['tel']) ?>">
                     <label for="adresse">Adresse</label>
-                    <textarea class="adresse" name="adresse" id="adresse" cols="30" rows="5"><?= htmlspecialchars($producer['adresse']) ?></textarea>
-                </div>
+                    <textarea class="form-item" class="adresse" name="adresse" id="adresse" cols="30" rows="5"><?= htmlspecialchars($producer['adresse']) ?></textarea>
 
                 <div class="select-producer text-center">
-                    <h4>Ses huitres</h4>
-                    <select name="huitre_n" id="">
+                    <label for="select-producer">Ses huitres</label>
+                    <select class="form-item" name="huitre_n" id="select-producer">
                     <?php foreach($allHuitres as $allHuitre){?>
                         <option  <?php if ($allHuitre['id']==$producer['huitre_id']){ ?> selected="selected" <?php }?> value="<?= $allHuitre['id'] ?>" ><?=htmlspecialchars($allHuitre['h_name']) ?></option>
                 <?php } ?>
@@ -31,26 +21,20 @@
                 </div>
 
 
-                <div class="text_content">
-                    <textarea class="content" name="content" id="content" cols="30" rows="10"><?= htmlspecialchars($producer['p_content']) ?></textarea>
-                </div>
+                    <textarea class="form-item content m-top-5" name="content" id="content" cols="30" rows="10"><?= htmlspecialchars($producer['p_content']) ?></textarea>
 
-                <div class="article_title">
                     <label for="alt">Titre seo d'image</label>
-                    <input type="text" id="alt" name="alt" value="<?= htmlspecialchars($producer['alt']) ?>">
-                </div>
+                    <input class="form-item" type="text" id="alt" name="alt" value="<?= htmlspecialchars($producer['alt']) ?>">
 
-                <div class="article_title">
                     <input type="file" class="img" name="img">
                     <input type="hidden" name="imageValue" value="<?= htmlspecialchars($producer['img']) ?>"/>
-                    <img src="<?= htmlspecialchars($producer['img']) ?>" alt="<?= htmlspecialchars($producer['alt']) ?>">
+                    <div>
+                        <img class="img-fluid img-br-10px admin-huitre-image m-auto admin-edit-img m-top-5" src="<?= htmlspecialchars($producer['img']) ?>" alt="<?= htmlspecialchars($producer['alt']) ?>">
+                    </div>
+
+                    <div class="text-center m-top-5">
+                    <input type="submit" class="btn yellow-btn " name="submit" id="upload">
                 </div>
-
-            </div>
-
-            <div class="subBtn">
-                <input type="submit" class="btn btn-secondary" name="submit" id="upload">
-            </div>
         </form>
     </div>
 

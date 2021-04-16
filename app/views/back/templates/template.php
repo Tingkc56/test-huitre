@@ -43,8 +43,7 @@
                         <li class="nav-li"><a class="nav-a"
                                 href="hbAdmin.php?action=producers">Gérer
                                 les Producteurs</a></li>
-                        <li class="nav-li"><a class="nav-a" href="hbAdmin.php?action=articles">Gérer les
-                                mon blog</a>
+                        <li class="nav-li"><a class="nav-a" href="hbAdmin.php?action=articles">Gérer mon blog</a>
                         </li>
                         <li class="nav-li"><a class="nav-a"
                                 href="hbAdmin.php?action=commentaires">Gérer
