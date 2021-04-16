@@ -1,3 +1,5 @@
+//nav collapse
+
 var navtoggle = document.querySelector('.navbar-toggler')
 var navcollapse = document.querySelector('#navbarCollapse')
 

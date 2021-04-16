@@ -2,7 +2,7 @@
 <!-- fonction php pour injecter le header -->
 <div class="welcome-image">
     <div>
-        <img src="app\public\front\images\huitre-bretagne.jpg" alt="huitre bretagne">
+        <img src="app/public/front/images/huitre-bretagne.jpg" alt="huitre bretagne">
     </div>
 </div>
 

@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <!-- style sheet -->
-    <link rel="stylesheet" href="app\public\front\css\style.css">
+    <link rel="stylesheet" href="app/public/front/css/style.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="app\public\front\images\favicon.ico">
+    <link rel="shortcut icon" href="app/public/front/images/favicon.ico">
         
     <title>Huîltre Bretagne</title>
 </head>
@@ -77,6 +77,7 @@
                     <li><a href="index.php?action=producers">Producteurs</a></li>
                     <li><a href="index.php?action=blog">Blog</a></li>
                     <li><a href="index.php?action=contact">Contact</a></li>
+                    <li><a href="index.php?action=connect">Connexion</a></li>
                 </ul>
             </div>
             <div class="flex-3-item-perline-s flex-4-item-perline-l foot-presentation">
@@ -107,7 +108,7 @@
         </div>
         <div>
             <div class="footer_top container">
-            <p class="foot-mention" >&copy; Huitre Bretagne 2021. Conditions générales d’utilisation et <a href="index.php?action=mention">mentions légales.</a></p>
+            <p class="foot-mention" >&copy; Huitre Bretagne 2021. Conditions générales d’utilisation et <a href="index.php?action=mention">conditions générales.</a></p>
             </div>
         </div>
         </div>
@@ -115,10 +116,10 @@
 
 
     <!-- js -->
-    <script src="app\public\front\js\validateForm.js"></script>
-    <script src="app\public\front\js\categoryBlog.js"></script>
-    <script src="app\public\front\js\burger.js"></script>
-    <script src="app\public\front\js\adressApi.js"></script>
+    <script src="app/public/front/js/validateForm.js"></script>
+    <script src="app/public/front/js/categoryBlog.js"></script>
+    <script src="app/public/front/js/burger.js"></script>
+    <script src="app/public/front/js/adressApi.js"></script>
 
 
 </body>

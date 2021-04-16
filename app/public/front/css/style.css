@@ -805,7 +805,7 @@ huitres
 }
 
 .product-img img {
-  width: 70%;
+  width: 60%;
 }
 
 /* ------huitre detail page-----*/
@@ -819,6 +819,10 @@ huitres
 .huitre-page-producors h3 {
   color: black;
   font-family: "Dancing Script", cursive;
+}
+
+.huitre-adapt-img {
+  width: 50%;
 }
 
 /* 
@@ -926,6 +930,22 @@ connexion
   border: 1px solid #c2912a;
   color: #c2912a;
   margin-top: 5%;
+}
+
+/* 
+---------------------------------------------
+condition genetale
+--------------------------------------------- 
+*/
+.mention p {
+  text-align: left;
+}
+.mention h2, .mention h3 {
+  color: #c2912a;
+}
+
+.check-mention a {
+  color: #c2912a;
 }
 
 /* -@media 2 ------------middle scree----------------------- */
@@ -1039,6 +1059,10 @@ connexion
   /* ------ huitre-----*/
   .product-img img {
     width: 100%;
+  }
+
+  .huitre-adapt-img {
+    width: auto;
   }
 
   /* ------ blog-----*/

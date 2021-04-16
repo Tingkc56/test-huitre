@@ -1,4 +1,5 @@
 
+//function check if empty
 function hasEmptyFields(form) {
   let hasEmpty = false
   form.querySelectorAll('input, textarea').forEach(element => {
@@ -9,8 +10,8 @@ function hasEmptyFields(form) {
   return hasEmpty
 }
 
+// check the sign up form
 function validateSignUp(){
-
   const signUp = document.querySelector('#signUp')
   if (hasEmptyFields(signUp)) {
     alert("le champ ne peut pas être vide");
@@ -26,7 +27,7 @@ function validateSignUp(){
          return false;
      }
 
- //check password length
+    //check password length
      var psws=document.querySelectorAll(".psw");
      console.log(psws);
 
@@ -35,7 +36,7 @@ function validateSignUp(){
        alert("Le mot de passe doit avoir au moin 6 caractères");
        return false;
      }}
- //check 2 passwords match
+    //check 2 passwords match
      var psw1=document.querySelector(".psw1").value;
      var psw2=document.querySelector(".psw2").value;
      if(psw1!==psw2){
@@ -45,6 +46,8 @@ function validateSignUp(){
 
 }
 
+
+// check the sign in form
 function validateSignIn(){
 
   const signIn = document.querySelector('#signIn')
@@ -64,6 +67,7 @@ function validateSignIn(){
 
 }
 
+// check the contact form
 function validateContact(){
 
   const contact = document.querySelector('#contact')
@@ -81,8 +85,15 @@ function validateContact(){
            return false;
        }
 
+       var check=document.getElementsByTagName('checkbox').value;
+       if(!check){
+         return false;
+       }
+
 }
 
+
+// check the comment form
 function validateComments(){
 
   const comment = document.querySelector('#comment')

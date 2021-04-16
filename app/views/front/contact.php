@@ -20,8 +20,15 @@
 
         <label for="content">Message</label>
         <textarea class="form-item form-content" id="content" name="content" placeholder="Votre message" ></textarea>
+        
+        <div class="text-center m-top-5 check-mention" >
+        <input type="checkbox" id="condition" name="condition" >
+        <label for="condition">j'accepte les <a href="index.php?action=mention">conditions générales.</a></label>
+        </div>
+        
 
         <button class="btn" type="submit" onclick="return validateContact()">Valider</button>
+        
     </form>
 
 </section>

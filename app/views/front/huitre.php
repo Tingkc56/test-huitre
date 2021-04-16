@@ -4,7 +4,7 @@
 
         <div class="article-page">
                 <div class="article-img flex-1-item-perline-s flex-2-item-perline-m">
-                        <img class="img-fluid img-br-10px" src="<?= htmlspecialchars($huitre['img']) ?>"
+                        <img class="img-fluid img-br-10px huitre-adapt-img" src="<?= htmlspecialchars($huitre['img']) ?>"
                                 alt="<?= htmlspecialchars($huitre['alt']) ?>">
                 </div>
                 <div class="article-body flex-1-item-perline-s flex-2-item-perline-m">

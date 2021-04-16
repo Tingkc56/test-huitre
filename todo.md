@@ -1,5 +1,3 @@
-* backend-css
-
 * RGPD
 * readme
 
@@ -8,9 +6,7 @@
 * test de vitess, test de w3school
 
 bugs:
-* input value null ou getelementsbyclassname null
 * changer tous les \??? 
-* login admin 全部输入但是id错误会报错 (if?)
 * htaccess ne marche pas
 * maybe admin的nav可以以其他方式来安排
 

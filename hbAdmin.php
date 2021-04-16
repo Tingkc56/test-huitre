@@ -26,8 +26,9 @@ try{
                 throw new Exception('Renseigner vos identifiant');
             }
         }
-        
-        elseif($_GET['action'] == 'accueilAdmin'){
+
+        if($_SESSION){  
+        if($_GET['action'] == 'accueilAdmin'){
             $backController ->accueilAdmin();
         }
 
@@ -181,8 +182,11 @@ try{
             $id = $_GET['id'];
             $backController-> deletComment($id);
         }
-
-    }else{
+    }
+    else{
+        $backController->connexionAdmin();
+    }
+      }else{
         $backController->connexionAdmin();
     }
     

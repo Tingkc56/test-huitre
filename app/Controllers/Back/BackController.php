@@ -18,20 +18,25 @@ class BackController
 
     function connexion($mail,$pass)
     {
+        $isPasswordCorrect=false;
+        
         $userManager = new UserManager();
 
         $connexAdm = $userManager->recupAdmin($mail, $pass);
 
         $result = $connexAdm->fetch();
 
-        $isPasswordCorrect = password_verify($pass,$result['pass']);
+        if($result){$isPasswordCorrect = password_verify($pass,$result['pass']);}
 
-        $_SESSION['mail'] = $result['mail'];
-        $_SESSION['[pass]'] = $result['pass'];
-        $_SESSION['id'] = $result['id'];
-        $_SESSION['name'] = $result['adminname'];
+
 
         if($isPasswordCorrect){
+
+            $_SESSION['mail'] = $result['mail'];
+            $_SESSION['[pass]'] = $result['pass'];
+            $_SESSION['id'] = $result['id'];
+            $_SESSION['name'] = $result['adminname'];
+    
             require 'app/views/back/hbtable.php';
         }else{
             echo 'Vos identifients sont incorrect';

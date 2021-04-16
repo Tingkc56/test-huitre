@@ -174,7 +174,7 @@ huitres
 
 .product-img{
   img{
-    width: 70%;
+    width: 60%;
   }
 }
 /* ------huitre detail page-----*/
@@ -191,6 +191,10 @@ huitres
      color: black;
      font-family: $italicfont;
    }
+ }
+
+ .huitre-adapt-img{
+  width: 50%;
  }
 
  /* 
@@ -323,6 +327,26 @@ connexion
   }
 }
 
+/* 
+---------------------------------------------
+condition genetale
+--------------------------------------------- 
+*/
+
+.mention{
+  p{
+    text-align: left;
+  }
+  h2,h3{
+    color: $goldcolor;
+  }
+}
+
+.check-mention{
+  a{
+    color:$goldcolor;
+  }
+}
 
 
 
@@ -456,6 +480,10 @@ connexion
     width: 100%;
   }
 }
+
+.huitre-adapt-img{
+  width: auto;
+ }
 /* ------ blog-----*/
 
 .product-wrapper{
