@@ -643,6 +643,7 @@ global styles
   line-height: 20px;
 }
 
+/* ------  general set*/
 .show {
   display: flex;
 }
