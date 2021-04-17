@@ -542,6 +542,47 @@ padding-bottom: 4%;
   padding: 0.75rem;
 }
 
+/* ------ cookie --------------------------------------*/
+#cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+   .cookie-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;  
+    position: relative;
+    background: #f1f1f1;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.2);
+    border: 1px solid #f9f9f9;
+     .cookie-content {
+      padding: 15px;
+      width: 80%;
+        .cookie-link {
+         text-decoration: underline;
+         color: $goldcolor;
+         font-weight: bold;
+      }
+    }
+    
+    .cookie-close-link {
+      padding: 1%;
+      position: absolute;
+      text-decoration: none;
+      color:white;
+      background-color: $goldcolor;
+      top: 40%;
+      right: 10%;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    
+  }
+}
 
 // general set
 .show{

@@ -604,6 +604,45 @@ global styles
   padding: 0.75rem;
 }
 
+/* ------ cookie --------------------------------------*/
+#cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+#cookie-bar .cookie-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background: #f1f1f1;
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f9f9f9;
+}
+#cookie-bar .cookie-container .cookie-content {
+  padding: 15px;
+  width: 80%;
+}
+#cookie-bar .cookie-container .cookie-content .cookie-link {
+  text-decoration: underline;
+  color: #c2912a;
+  font-weight: bold;
+}
+#cookie-bar .cookie-container .cookie-close-link {
+  padding: 1%;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background-color: #c2912a;
+  top: 40%;
+  right: 10%;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .show {
   display: flex;
 }

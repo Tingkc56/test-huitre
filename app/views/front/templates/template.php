@@ -120,6 +120,7 @@
     <script src="app/public/front/js/categoryBlog.js"></script>
     <script src="app/public/front/js/burger.js"></script>
     <script src="app/public/front/js/adressApi.js"></script>
+    <script src="app/public/front/js/cookie.js"></script>
 
 
 </body>

@@ -2,6 +2,8 @@
 * readme
 
 * seo
+* svg
+* coockie bar
 * clean + tous les commentaires
 * test de vitess, test de w3school
 
