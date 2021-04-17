@@ -46,7 +46,7 @@ var content = '<div id="cookie-bar"><div class="cookie-container"><div class="co
 
 if (document.cookie.indexOf('cookie=')== -1){
 } else {
-  document.getElementById('cookie-bar').style.display = 'block';
+  document.getElementById('cookie-bar').style.display = 'none';
 }
 
 }();
