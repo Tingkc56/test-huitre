@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 <!-- fonction php pour injecter le header -->
 <section class="huitres">
-<h1 class="text-center" >Nos Huitres</h1>
+<h1 class="text-center" >Nos variétés des Huitres</h1>
 <div class="flex-wrapper">
 <?php foreach($huitres as $huitre){?>
         <div class="flex-1-item-perline-s flex-2-item-perline-m flex-4-item-perline-l">
