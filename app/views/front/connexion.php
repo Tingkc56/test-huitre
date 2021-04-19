@@ -24,8 +24,8 @@
                         name="pass" id="check-pass">
 
                     <div class="m-top-5 check-mention" >
-                        <input type="checkbox" id="condition" name="condition" >
-                        <label for="condition">j'accepte les <a href="index.php?action=mention">conditions générales.</a></label>
+                        <input type="checkbox" id="signUpCondition" name="condition" >
+                        <label for="condition">j'ai lu et accepte les <a href="index.php?action=mention">conditions générales.</a></label>
                     </div>
 
                     <button type="submit" onclick="return validateSignUp()" class="btn btn-default">Valider</button>

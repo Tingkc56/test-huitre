@@ -43,6 +43,12 @@ function validateSignUp(){
        alert("Les 2 mots de passe ne sont pas identique");
        return false;
      }
+    //check the ckechbox
+    var checkbox = document.querySelector('#signUpCondition');
+    if(checkbox.checked == false){
+    alert("Veuillez lire et accepter les conditions générales");
+    return false;
+    }
 
 }
 
@@ -65,6 +71,19 @@ function validateSignIn(){
            return false;
        }
 
+}
+
+function formConditionCheck(){
+  var checkbox =document.getElementById('condition');
+  console.log(checkbox);
+  //If the checkbox has been checked
+  if(checkbox.checked){
+      //Enable the button.
+      document.getElementById("submit_button").disabled = false;
+  } else{
+      //Disable the button.
+      document.getElementById("submit_button").disabled = true;
+  }
 }
 
 // check the contact form

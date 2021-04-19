@@ -941,6 +941,11 @@ contact
   color: #c2912a;
   margin-top: 2%;
 }
+.contact .btn:disabled {
+  border: 1px solid grey;
+  color: grey;
+  cursor: default;
+}
 
 /* confirmation de contact */
 .confirm-message {

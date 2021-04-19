@@ -2,7 +2,6 @@
 
 * RGPD
 * seo
-* svg
 * clean + tous les commentaires
 * test de vitess, test de w3school
 * readme
@@ -10,7 +9,6 @@
 bugs:
 * changer tous les \ sur page html-test w3school
 * htaccess ne marche pas
-
 
 
 

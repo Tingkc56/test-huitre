@@ -23,3 +23,9 @@ $italicfont:'Dancing Script', cursive;
     border: 1px solid $goldcolor;
     color: $goldcolor;
 }
+
+
+@mixin disabledbutton{
+    border: 1px solid grey;
+    color: grey;
+}

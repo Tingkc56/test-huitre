@@ -295,6 +295,12 @@ contact
     @include goldbutton;
     margin-top: 2%;
   }
+
+  .btn:disabled{
+    @include disabledbutton;
+    cursor: default;
+  }
+
 }
 
 /* confirmation de contact */
