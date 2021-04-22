@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
@@ -12,9 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <!-- style sheet -->
     <link rel="stylesheet" href="app/public/front/css/style.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- favicon -->
     <link rel="shortcut icon" href="app/public/front/images/favicon.ico">
         
@@ -28,7 +26,13 @@
                 <div><a href="/" class="nav-logo"><img class="logo img-br-10px" src="app/public/front/images/huitre-bretagne.png"
                             alt="huitre bretagne"><span class="text-logo">HUITRE BRETAGNE</span> </a> </div>
                 <div class="navbar-toggler">
-                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                    <span class="navbar-toggler-icon">
+                        <svg viewBox="0 0 100 100" width="40" height="40">
+                            <rect width="100" height="20"></rect>
+                            <rect y="40" width="100" height="20"></rect>
+                            <rect y="80" width="100" height="20"></rect>
+                        </svg>
+                    </span>
                 </div>
                 <div class="navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-ul">

@@ -115,7 +115,7 @@ function validateContact(){
 // check the comment form
 function validateComments(){
 
-  const comment = document.querySelector('#comment')
+  const comment = document.querySelector('#article-comment')
   if (hasEmptyFields(comment)) {
     alert("le champ ne peut pas être vide");
     return false;

@@ -26,15 +26,15 @@
                 <?php } ?>
             </div>
 
-            <form id="comment" class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
+            <form id="article-comment" class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
                     <label for="comment">Votre commentaire:</label>
                     <textarea class="form-item" rows="5" id="comment" name="comment"></textarea>
-                    <label for="usr">Votre nom:</label>
+                    <label for="cmt-name">Votre nom:</label>
                     <input type="text" class="form-item" id="cmt-name" name="name">
                     <button type="submit" class="btn" onclick="return validateComments()">Envoyer</button>
             </form>
         </div>
-
+</section>
 
 
     <?php $content = ob_get_clean(); ?>

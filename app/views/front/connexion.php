@@ -8,7 +8,7 @@
         <div id="inscription" class="flex-1-item-perline-s flex-2-item-perline-m">
                 <h3 class="text-center">Inscrivez-vous</h3>
                 <form id="signUp" action="index.php?action=creatUser" method="post">
-                    <label for="name">Pseudo:</label>
+                    <label for="Pseudo">Pseudo:</label>
                     <input type="text" class="form-item " placeholder="Votre Pseudo *" name="Pseudo" id="Pseudo">
 
                     <label for="i-mail">Email:</label>
@@ -25,7 +25,7 @@
 
                     <div class="m-top-5 check-mention" >
                         <input type="checkbox" id="signUpCondition" name="condition" >
-                        <label for="condition">j'ai lu et accepte les <a href="index.php?action=mention">conditions générales.</a></label>
+                        <label for="signUpCondition">j'ai lu et accepte les <a href="index.php?action=mention">conditions générales.</a></label>
                     </div>
 
                     <button type="submit" onclick="return validateSignUp()" class="btn btn-default">Valider</button>

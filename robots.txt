@@ -1,0 +1,10 @@
+User-agent:*
+Disallow:/index.php?action=mention
+Disallow:/hbAdmin.php?action=accueilAdmin
+Disallow:/hbAdmin.php?action=articles
+Disallow:/hbAdmin.php?action=huitres
+Disallow:/hbAdmin.php?action=producers
+Disallow:/hbAdmin.php?action=messages
+Disallow:/hbAdmin.php?action=commentaires
+
+Sitemap: https://test-huitre.herokuapp.com/sitemap.xml

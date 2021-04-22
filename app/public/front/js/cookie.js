@@ -3,7 +3,7 @@ var content = '<div id="cookie-bar"><div class="cookie-container"><div class="co
 
     document.body.innerHTML =  content + document.body.innerHTML;
 
-if (document.cookie.indexOf('cookie=')== -1){
+if (!document.cookie.indexOf('cookie=-1')){
 } else {
   document.getElementById('cookie-bar').style.display = 'none';
 }

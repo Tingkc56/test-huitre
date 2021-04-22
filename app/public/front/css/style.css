@@ -618,6 +618,7 @@ global styles
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  min-height: 15vh;
   background: #f1f1f1;
   box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.2);
   border: 1px solid #f9f9f9;
@@ -625,6 +626,7 @@ global styles
 #cookie-bar .cookie-container .cookie-content {
   padding: 15px;
   width: 80%;
+  vertical-align: middle;
 }
 #cookie-bar .cookie-container .cookie-content .cookie-link {
   text-decoration: underline;
@@ -637,7 +639,7 @@ global styles
   text-decoration: none;
   color: white;
   background-color: #c2912a;
-  top: 40%;
+  top: 20%;
   right: 10%;
   font-size: 20px;
   line-height: 20px;
@@ -731,7 +733,7 @@ header
 }
 
 .navbar-toggler-icon {
-  color: #c2912a;
+  fill: #c2912a;
   font-size: 3rem;
 }
 

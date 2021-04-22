@@ -556,18 +556,19 @@ padding-bottom: 4%;
     margin-right: auto;
     margin-left: auto;  
     position: relative;
+    min-height: 15vh;
     background: #f1f1f1;
     box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.2);
     border: 1px solid #f9f9f9;
      .cookie-content {
       padding: 15px;
       width: 80%;
+      vertical-align: middle;
         .cookie-link {
          text-decoration: underline;
          color: $goldcolor;
          font-weight: bold;
       }
-      
     }
     
     .cookie-close-link {
@@ -576,7 +577,7 @@ padding-bottom: 4%;
       text-decoration: none;
       color:white;
       background-color: $goldcolor;
-      top: 40%;
+      top: 20%;
       right: 10%;
       font-size: 20px;
       line-height: 20px;

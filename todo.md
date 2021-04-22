@@ -1,6 +1,4 @@
 
-
-* RGPD
 * seo
 * clean + tous les commentaires
 * test de vitess, test de w3school
