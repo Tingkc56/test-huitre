@@ -49,7 +49,7 @@ class ProducerManager extends Manager{
 
     public function getProducer($id){
     $bdd = $this->bdConnect();
-    $req = $bdd->prepare('SELECT * FROM producers WHERE id=?');
+    $req = $bdd->prepare('SELECT id, alt, p_name, img, adresse, tel, p_content, huitre_id FROM producers WHERE id=?');
     $req->execute(array($id));
 
     return $req->fetch();
@@ -57,7 +57,7 @@ class ProducerManager extends Manager{
 
     public function getHuitreProducer($id){
         $bdd = $this->bdConnect();
-        $req = $bdd->prepare('SELECT id, p_name, img, huitre_id
+        $req = $bdd->prepare('SELECT id, p_name, img, alt, huitre_id
         FROM producers 
         WHERE huitre_id=?' 
         );

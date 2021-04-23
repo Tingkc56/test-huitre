@@ -46,7 +46,7 @@ class HuitreManager extends Manager{
 
         public function getHuitre($id){
             $bdd = $this->bdConnect();
-            $req = $bdd->prepare('SELECT * FROM huitres WHERE id=?');
+            $req = $bdd->prepare('SELECT h_name, h_content, img, alt FROM huitres WHERE id=?');
             $req->execute(array($id));
             return $req->fetch();
             }

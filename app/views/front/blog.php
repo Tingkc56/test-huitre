@@ -3,6 +3,7 @@
 
 <section class="blog">
     <h1 class="text-center">Blog</h1>
+        <!-- nav category -->
     <header id="headerblog">
             <nav id="nav-categories" class="nav nav-category">
                 <button class="btn active" onclick="filter('tout')" id="tout"> tout</button>
@@ -10,7 +11,7 @@
                 <button class="btn" onclick="filter('astuces')" id="astuces"> astuces</button>
                 <button class="btn" onclick="filter('tourisme')" id="tourisme"> tourisme</button>
             </nav>
-        </header>
+    </header>
     <div class="flex-wrapper">
         <?php foreach($allArticles as $allArticle){?>
         <div class="<?=htmlspecialchars($allArticle['category']) ?> blogArticle flex-1-item-perline-s flex-1-item-perline-m flex-3-item-perline-l">

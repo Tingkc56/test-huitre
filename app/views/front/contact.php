@@ -4,7 +4,6 @@
 <section class="contact m-auto">
     <h1 class="text-center">Nous contacter</h1>
     <form id="contact" class="form contact-form" action="index.php?action=getMessage" method="post" >
-    <!-- 只要按下面的submit就会产生action，会去寻找contactMail这个function -->
         <label for="usr">Nom</label>
         <input class="form-item form-name" type="text" id="usr" name="name" placeholder="Votre nom">
 
@@ -26,7 +25,6 @@
         <label for="condition">j'ai lu et accepte les <a href="index.php?action=mention">conditions générales.</a></label>
         </div>
         
-
         <button class="btn" type="submit" id="submit_button" disabled onclick="return validateContact()">Valider</button>
         
     </form>

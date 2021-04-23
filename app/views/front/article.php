@@ -4,6 +4,7 @@
 <section class="blog-article text-center">
 
     <div class="article-page">
+    <!-- l'article -->
         <div class="article-img flex-1-item-perline-s flex-2-item-perline-m">
             <img class="img-fluid img-br-10px" src="<?= htmlspecialchars($article['img']) ?>"
                 alt="<?= htmlspecialchars($article['alt']) ?>">
@@ -16,7 +17,7 @@
     </div>
 
         <div class="article-page">
-             <!-- les commentaires -->
+             <!-- les commentaires laissés-->
              <div class="blog-comments article-body flex-1-item-perline-s flex-2-item-perline-m">
                 <?php foreach($articleComments as $articleComment){?>
 
@@ -25,7 +26,7 @@
                 <p class="article-text"><?=htmlspecialchars($articleComment['content']) ?></p>
                 <?php } ?>
             </div>
-
+            <!-- form commentaires -->
             <form id="article-comment" class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
                     <label for="comment">Votre commentaire:</label>
                     <textarea class="form-item" rows="5" id="comment" name="comment"></textarea>

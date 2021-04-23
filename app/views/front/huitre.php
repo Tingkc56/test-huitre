@@ -46,8 +46,7 @@
                                         <div>
                                                 <a href="index.php?action=producer&id=<?= $producer['id'] ?>">
                                                         <img class="circular-thumbnail-img"
-                                                                src="<?= htmlspecialchars($producer['img']) ?>"
-                                                                alt="<?= htmlspecialchars($producer['alt']) ?>">
+                                                                src="<?= htmlspecialchars($producer['img']) ?>" alt="<?= htmlspecialchars($producer['alt']) ?>">
                                                         <div class="text-center">
                                                                 <h3><?= htmlspecialchars($producer['p_name']) ?></h3>
                                                         </div>

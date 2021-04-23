@@ -124,7 +124,6 @@ class FrontController{
         $producers = new \Project\Models\ProducerManager();
         $producers = $producers->getHuitreProducer($id);
 
-
         require 'app/views/front/huitre.php';
     }
 

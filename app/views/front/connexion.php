@@ -3,8 +3,8 @@
 
 <section class="connect m-auto">
     <h1 class="text-center">Veuillez vous connecter</h1>
-
     <div class="admin flex-wrapper m-top-5">
+    <!-- inscription -->
         <div id="inscription" class="flex-1-item-perline-s flex-2-item-perline-m">
                 <h3 class="text-center">Inscrivez-vous</h3>
                 <form id="signUp" action="index.php?action=creatUser" method="post">
@@ -31,7 +31,7 @@
                     <button type="submit" onclick="return validateSignUp()" class="btn btn-default">Valider</button>
                 </form>
         </div>
-
+    <!-- connexion -->
         <div id="connexion" class="flex-1-item-perline-s flex-2-item-perline-m">
             <form id="signIn" action="index.php?action=connexionUser" method="post">
                     <h3 class="text-center">Connectez-vous</h3>
