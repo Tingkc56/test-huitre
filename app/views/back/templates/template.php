@@ -25,8 +25,15 @@
                 <div class="container"><a href="hbAdmin.php?action=accueilAdmin" class="nav-logo"><span
                             class="text-logo">HUITRE
                             BRETAGNE</span> </a> </div>
-                <div class="navbar-toggler container">
-                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                <!-- nav burger icon -->
+                <div class="navbar-toggler">
+                    <span class="navbar-toggler-icon">
+                        <svg viewBox="0 0 100 100" width="40" height="40">
+                            <rect width="100" height="20"></rect>
+                            <rect y="40" width="100" height="20"></rect>
+                            <rect y="80" width="100" height="20"></rect>
+                        </svg>
+                    </span>
                 </div>
                 <div class="navbar-admin navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-ul">
