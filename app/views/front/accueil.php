@@ -13,9 +13,11 @@
     <h2>Ne cherchez pas plus loin, vous trouverez tous les producteurs de huitre en Bretagne ici !</h2>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto mollitia aut exercitationem, ipsam
             voluptatum nesciunt officia quas repellat vitae nobis, nostrum odio quod modi saepe? Ipsum, voluptate?
-            Repudiandae voluptas placeat aperiam itaque magni esse cumque, nisi eos, corrupti, repellendus ipsa magnam
-            reprehenderit doloribus labore accusantium velit voluptatum. Quos, nostrum! Quo dignissimos minus
-            perferendis et, accusamus exercitationem harum sapiente quod.</p>
+            Repudiandae voluptas.</p>
+    <p>En Bretagne ? Envie de Huitres ? Nisi eos, corrupti, repellendus ipsa magnam
+            reprehenderit doloribus labore accusantium velit huitre Bretagne voluptatum. Quos, nostrum! Quo dignissimos minus
+            perferendis et, accusamus exercitationem harum sapiente quod, nostrum odio quod modi saepe? Ipsum, voluptate?
+            Repudiandae voluptas placeat aperiam itaque magni esse cumque.</p>
 </div>
 <!-- end of welcome text -->
 
