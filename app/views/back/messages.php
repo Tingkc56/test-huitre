@@ -2,7 +2,7 @@
 
 <section>
 <h1 class="text-center" >Gérer mes messages</h1>
-
+<!-- start  show the message list-->
         <div class="flex-wrapper">
             <?php foreach($messages as $message){?>
                 <div class="flex-1-item-perline-s flex-2-item-perline-m flex-3-item-perline-l">
@@ -22,10 +22,8 @@
             <?php } ?>
         </div>
     </div>
+<!-- end of the message list-->
 </section>
 
-
-
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

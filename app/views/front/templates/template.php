@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!-- start head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Huitre Bretagne : Envie d’huitres ? Besoins de  recettes ? Adepte ou junior ? C’est par ici !  Le meilleur de l’huitre made in BZH  en collaboration avec vos producteurs bretons préférés.">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
@@ -18,15 +18,19 @@
 
     <title>Huîltre Bretagne</title>
 </head>
+<!-- end of head -->
 
 <body>
     <header>
+<!-- start nav bar -->
         <div class="navbar-background">
             <nav class="navbar container flex-wrapper">
+                <!-- logo -->
                 <div><a href="/" class="nav-logo"><img class="logo img-br-10px"
                             src="app/public/front/images/huitre-bretagne.png" alt="huitre bretagne"><span
-                            class="text-logo">HUITRE BRETAGNE</span> </a> </div>
-                <!-- nav bar -->
+                            class="text-logo">HUITRE BRETAGNE</span> </a> 
+                </div>
+                <!-- nav burger icon -->
                 <div class="navbar-toggler">
                     <span class="navbar-toggler-icon">
                         <svg viewBox="0 0 100 100" width="40" height="40">
@@ -36,6 +40,7 @@
                         </svg>
                     </span>
                 </div>
+                <!-- main nav menu -->
                 <div class="navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-ul">
                         <li class="nav-li flex-6-item-perline"><a class="nav-a" href="/">Accueil</a></li>
@@ -50,7 +55,7 @@
                         <?php if(isset($_SESSION['pseudo'])): ?>
                         <li class="nav-li flex-6-item-perline">
                             <a class="nav-a" href="index.php?action=userInfos"><?= $_SESSION['pseudo'] ?></a>
-                            <a class="nav-a" href="index.php?action=disConnect">(Deconnexion)</a>
+                            <p><a class="nav-a" href="index.php?action=disConnect">(Deconnexion)</a></p>
                         </li>
                         <?php else: ?>
                         <li class="nav-li flex-6-item-perline">
@@ -62,17 +67,18 @@
             </nav>
             <div class="nav-bottom-line"></div>
         </div>
-
+<!-- end of nar bar -->
     </header>
 
-    <!-- main pages -->
+<!-- start main pages -->
     <main>
         <div class="container">
             <?= $content ?>
         </div>
     </main>
+<!-- end of main pages -->
 
-    <!-- footer -->
+<!--start footer -->
     <footer>
         <div class="foot-backgroud">
             <div class="food-top-line"></div>
@@ -127,6 +133,7 @@
             </div>
         </div>
     </footer>
+<!-- end of footer -->
 
 
     <!-- javascripts -->

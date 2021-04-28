@@ -1,10 +1,9 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
 
 <section class="blog-article text-center">
 
+<!-- start article -->
     <div class="article-page">
-    <!-- l'article -->
         <div class="article-img flex-1-item-perline-s flex-2-item-perline-m">
             <img class="img-fluid img-br-10px" src="<?= htmlspecialchars($article['img']) ?>"
                 alt="<?= htmlspecialchars($article['alt']) ?>">
@@ -15,9 +14,10 @@
             <p class="article-text"><?= htmlspecialchars($article['content']) ?></p>
         </div>  
     </div>
+<!-- end of article -->
 
         <div class="article-page">
-             <!-- les commentaires laissés-->
+             <!-- start read old comments-->
              <div class="blog-comments article-body flex-1-item-perline-s flex-2-item-perline-m">
                 <?php foreach($articleComments as $articleComment){?>
 
@@ -26,7 +26,9 @@
                 <p class="article-text"><?=htmlspecialchars($articleComment['content']) ?></p>
                 <?php } ?>
             </div>
-            <!-- form commentaires -->
+            <!-- end of read old comments -->
+
+            <!-- start new comments form -->
             <form id="article-comment" class="form-comments article-body flex-1-item-perline-s flex-2-item-perline-m" action="index.php?action=commentaire&id=<?= htmlspecialchars($article['id']) ?>" method="post">
                     <label for="comment">Votre commentaire:</label>
                     <textarea class="form-item" rows="5" id="comment" name="comment"></textarea>
@@ -34,6 +36,7 @@
                     <input type="text" class="form-item" id="cmt-name" name="name">
                     <button type="submit" class="btn" onclick="return validateComments()">Envoyer</button>
             </form>
+            <!-- end of new comments form -->
         </div>
 </section>
 

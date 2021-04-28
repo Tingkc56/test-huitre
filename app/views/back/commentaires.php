@@ -3,7 +3,7 @@
 
 <section>
 <h1 class="text-center" >Gérer mes commentaires</h1>
-
+<!-- start foreach all comments -->
         <div class="flex-wrapper">
         <?php foreach($allComments as $allComment){?>
                 <div class="flex-1-item-perline-s flex-2-item-perline-m flex-3-item-perline-l">
@@ -23,9 +23,9 @@
         </div>
             <?php } ?>
         </div>
+<!-- end of foreach all comments -->
     </div>
 </section>
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

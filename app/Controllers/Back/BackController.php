@@ -10,7 +10,7 @@ use Project\Models\ProducerManager;
 
 class BackController
 {
-    // gerer la page de connection admin 
+// connection admin 
     function connexionAdmin(){
         require 'app/views/back/connexionAdmin.php';
     }
@@ -52,6 +52,9 @@ class BackController
         require 'app/views/back/connexionAdmin.php';
     }
 
+
+
+// blog and articles page
     function articles(){
         $articles = new ArticleManager();
         $allArticles = $articles->getArticles();
@@ -62,8 +65,6 @@ class BackController
     function addArticle(){
         require 'app/views/back/newArticle.php';
     }
-
-
 
     function updateArticle($id,$title,$category,$content,$alt,$target_file)
     {
@@ -76,14 +77,13 @@ class BackController
             $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
             // set upload path
             $path="app\public\back\images\hb";
-            // n'est pas encore utilisé (sera utilisé plus tard)
 
-                // spécifie le chemin du fichier à télécharger
+                // dowload path
             $target_file = $path . basename($upfile["name"]);
            // var_dump($target_file);
 
 
-            // on vérifie que le fichier image est une image réelle??
+            // if upload new image or keep old one?
             if (isset($_POST["submit"])) 
             {
                 
@@ -98,7 +98,7 @@ class BackController
                         }
                         if (move_uploaded_file($upfile["tmp_name"], $target_file)) {
                             
-                // new or update? 
+                //if else check if article exist to decide if a new or update
                     if($id>0){
                         $articles = new ArticleManager();
                         $updateArticle = $articles->updateArticle($id,$title,$category,$content,$target_file);
@@ -118,7 +118,7 @@ class BackController
             } else {
                 echo "Ce fichier n'est pas une image. ";
                 }
-        }else{
+        }else{     
             if($id>0){
                 $articles = new ArticleManager();
                 $updateArticle = $articles->updateArticle($id,$title,$category,$content,$target_file);
@@ -145,6 +145,9 @@ class BackController
             require 'app/views/back/editArticle.php';
     }
 
+
+
+// oyster page
     function huitres(){
         $huitres = new HuitreManager();
         $allHuitres = $huitres->getHuitres();
@@ -158,38 +161,26 @@ class BackController
 
     function updateHuitre($id,$nomHuitre,$content,$alt,$target_file)
     {
-                // get image
+                // same as article, need to do a ORM later
                 $upfile=$_FILES["img"];
-                //var_dump($_FILES['img']);
-            // update without new image , use the original target_file (input hidden) 
             if($upfile["name"]!=''){ 
-                    //set upload type
                     $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
-                    // set upload path
                     $path="app\public\\front\images\\";
-                    // n'est pas encore utilisé (sera utilisé plus tard)
 
-                        // spécifie le chemin du fichier à télécharger
                     $target_file = $path . basename($upfile["name"]);
-                // var_dump($target_file);
 
-
-                    // on vérifie que le fichier image est une image réelle??
                     if (isset($_POST["submit"])) 
                     {
                         
                         $check = getimagesize($upfile["tmp_name"]);
                             if ($check !== false) {
-                            // Check file size
                                 if($upfile['size']>500000){
                                 }
-                                // Allow certain file formats
                                 if(!in_array($upfile["type"],$typelist)){
                                     die("Seuls les formats JPG, JPEG, PNG & GIF files sont authorisés.");
                                 }
                                 if (move_uploaded_file($upfile["tmp_name"], $target_file)) {
-                                    
-                                    // new or update? 
+
                                     if($id>0){
                                         $huitres = new HuitreManager();
                                         $updateHuitre = $huitres->updateHuitre($id,$nomHuitre,$content,$target_file);
@@ -226,7 +217,6 @@ class BackController
     function editHuitre($id){
         $huitres = new HuitreManager();
         $huitre = $huitres->getHuitre($id);
-        //var_dump($huitre);
         require 'app/views/back/editHuitre.php';
 }
 
@@ -236,11 +226,12 @@ class BackController
         header('Location: hbAdmin.php?action=huitres');
     }
 
-    function producers(){
 
+
+// producer pages
+    function producers(){
         $producers = new ProducerManager();
         $allProducers = $producers->getproducers();
-
         require 'app/views/back/producers.php';
     }
 
@@ -254,37 +245,24 @@ class BackController
     function updateProducer($id,$nomproducteur,$adresse,$tel,$huitre_n,$content,$alt,$target_file)
     {
 
-            // get image
+        // same as article, need to do a ORM later
             $upfile=$_FILES["img"];
-        // update without new image , use the original target_file (input hidden) 
         if($upfile["name"]!=''){ 
-            //set upload type
             $typelist=array("image/jpeg","image/jpg","image/png","image/gif");
-            // set upload path
             $path="app\public\\front\images\\";
-            // n'est pas encore utilisé (sera utilisé plus tard)
-
-                // spécifie le chemin du fichier à télécharger
             $target_file = $path . basename($upfile["name"]);
-            //var_dump($target_file);
-
-
-                // on vérifie que le fichier image est une image réelle??
             if (isset($_POST["submit"])) 
             {
             $check = getimagesize($upfile["tmp_name"]);
             if ($check !== false)
             {
-            // Check file size
                 if($upfile['size']>500000){
                  }
-                 // Allow certain file formats
                 if(!in_array($upfile["type"],$typelist)){
                     die("Seuls les formats JPG, JPEG, PNG & GIF files sont authorisés.");
                 }
                 if (move_uploaded_file($upfile["tmp_name"], $target_file)) {
-                    
-            // 从这来分支决定是否是修改还是新增
+
                     if($id>0){
                         $producers = new ProducerManager();
                         $updateProducer = $producers->updateProducer($id,$nomproducteur,$adresse,$tel,$huitre_n,$content,$alt,$target_file);
@@ -334,13 +312,7 @@ class BackController
 
 
 
-
-
-
-
-    
-
-    
+//contact page    
     function messages(){
         $messages = new MessageManager();
         $messages = $messages->showMessages();
@@ -353,6 +325,7 @@ class BackController
         header('Location: hbAdmin.php?action=messages');
     }
 
+// comments page
     function comments(){
         $comments = new CommentManager();
         $allComments = $comments->showComments();

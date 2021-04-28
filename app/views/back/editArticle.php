@@ -2,19 +2,19 @@
 <section class="edit-article">
 
         <h1 class="text-center" >Entrer votre article</h1>
-
+<!-- start form edit article -->
         <form class="text-center" action="hbAdmin.php?action=updateArticle&id=<?= $article['id'] ?>" enctype="multipart/form-data" method="post">
                     <label for="title">Votre titre</label>
                     <input class="form-item" type="text" id="title" name="title" value="<?= htmlspecialchars($article['title']) ?>">
-
+    <!-- start chose the article category -->
                 <div class=" text-center">
                             <input <?php if ($article['category']== 'recettes'){ ?> checked="checked" <?php }?> type="radio" name="category_blog" value="recettes" />Recettes
                             <input <?php if ($article['category']== 'astuces'){ ?> checked="checked" <?php }?> type="radio" name="category_blog" value="astuces" />Astuces
                             <input <?php if ($article['category']== 'tourisme'){ ?> checked="checked" <?php }?> type="radio" name="category_blog" value="tourisme" />Tourisme
                 </div>
+    <!-- end of chose the article category -->
 
                     <textarea class="content form-item" name="content" id="content" cols="30" rows="10"><?= htmlspecialchars($article['content']) ?></textarea>
-    
                     <label for="alt">Alt</label>
                     <input class="form-item" type="text" id="alt" name="alt" value="<?= htmlspecialchars($article['alt']) ?>">
 
@@ -27,8 +27,8 @@
                 <div class="text-center m-top-5">
                     <input type="submit" class="btn yellow-btn " name="submit" id="upload">
                 </div>
-                
         </form>
+    <!-- start form edit article -->
     </div>
 
 </section>

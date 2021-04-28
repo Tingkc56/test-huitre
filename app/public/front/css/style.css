@@ -305,6 +305,7 @@ global styles
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .circular-thumbnail-img img {
@@ -713,6 +714,7 @@ header
 
 .nav-li {
   text-align: left;
+  line-height: 2.2rem;
 }
 
 .nav-a {
@@ -721,7 +723,7 @@ header
 }
 
 .logo {
-  width: 20vw;
+  width: 16vw;
   display: none;
 }
 
@@ -1002,29 +1004,6 @@ condition genetale
 
 /* -@media 2 ------------middle scree----------------------- */
 @media screen and (min-width: 768px) {
-  /* ------ nav-bar -----*/
-  .logo {
-    display: block;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
-
-  .navbar-collapse {
-    display: flex;
-  }
-  .navbar-collapse .navbar-ul {
-    width: 100%;
-    flex-direction: row;
-    margin-left: 0%;
-    margin-top: 5%;
-    padding-right: 0;
-  }
-  .navbar-collapse .nav-li {
-    text-align: center;
-  }
-
   /* ------ footer-----*/
   .nav-footer {
     padding: 2%;
@@ -1072,12 +1051,29 @@ condition genetale
 /* -@media 3  -------big screen------------------ */
 @media screen and (min-width: 992px) {
   /* ------ navbar-----*/
+  .logo {
+    display: block;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
   .navbar-collapse {
     flex-basis: 60%;
+    margin-bottom: -12%;
+    margin-left: -5%;
+    display: flex;
   }
   .navbar-collapse .navbar-ul {
+    width: 100%;
+    flex-direction: row;
+    padding-right: 0;
     margin-left: 5%;
     margin-top: 0%;
+  }
+  .navbar-collapse .nav-li {
+    text-align: center;
   }
 
   /* ------ footer-----*/
@@ -1093,15 +1089,17 @@ condition genetale
 
   /* ------ accueil-----*/
   .welcome-image {
-    position: relative;
     margin-bottom: 5%;
   }
 
-  .welcome-anim {
+  .welcome {
+    position: relative;
+  }
+  .welcome .welcome-anim {
     background-color: rgba(248, 246, 241, 0.85);
     border-radius: 0.8rem;
     position: absolute;
-    top: 80%;
+    top: -250%;
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;

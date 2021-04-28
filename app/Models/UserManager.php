@@ -7,7 +7,7 @@ class UserManager extends Manager{
 
     public function recupAdmin($mail, $pass){
         $bdd = $this->bdConnect();
-        $req = $bdd->prepare('SELECT * FROM hbadmin WHERE mail = ?');
+        $req = $bdd->prepare('SELECT id, adminname,mail,pass FROM hbadmin WHERE mail = ?');
         $req->execute(array($mail)); 
         return $req;
     }
@@ -23,7 +23,7 @@ class UserManager extends Manager{
 
     public function checkUser($mail, $pass){
         $bdd = $this->bdConnect();
-        $req = $bdd->prepare('SELECT * FROM users WHERE mail = ?');
+        $req = $bdd->prepare('SELECT id, pseudo,mail,pass FROM users WHERE mail = ?');
         $req->execute(array($mail)); 
         return $req;
     }

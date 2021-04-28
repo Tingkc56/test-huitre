@@ -27,5 +27,4 @@
 </section>
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

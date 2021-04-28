@@ -15,7 +15,7 @@ class ArticleManager extends Manager{
 
     public function getArticles(){
         $bdd = $this->bdConnect();
-        $req = $bdd->query('SELECT * FROM articles');
+        $req = $bdd->query('SELECT id,title,category,content,alt,img  FROM articles');
         return $req;
     }
 
@@ -43,7 +43,7 @@ class ArticleManager extends Manager{
 
     public function getArticle($id){
     $bdd = $this->bdConnect();
-    $req = $bdd->prepare('SELECT * FROM articles WHERE id=?');
+    $req = $bdd->prepare('SELECT id,title,category,content,alt,img FROM articles WHERE id=?');
     $req->execute(array($id));
     return $req->fetch();
     }

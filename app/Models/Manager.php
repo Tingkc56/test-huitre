@@ -3,7 +3,7 @@
 namespace Project\Models;
 use Exception;
 
-
+// main manager for connecting the database
 class Manager{
     protected function bdConnect()
     {

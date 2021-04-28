@@ -1,5 +1,4 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
 
 <section class="contact m-auto">
     <h1 class="text-center">Nous contacter</h1>
@@ -33,5 +32,4 @@
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

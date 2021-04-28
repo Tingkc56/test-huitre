@@ -35,7 +35,7 @@ function filter(x){
   var btnContainer = document.getElementById("nav-categories");
   if(btnContainer){  
       var btns = btnContainer.getElementsByClassName("btn");
-  console.log(btns.length);
+  //console.log(btns.length);
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");

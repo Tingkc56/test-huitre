@@ -1,8 +1,8 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
 <section class="huitre text-center">
 
         <div class="article-page">
+<!-- start the oyster description -->
                 <div class="article-img flex-1-item-perline-s flex-2-item-perline-m">
                         <img class="img-fluid img-br-10px huitre-adapt-img"
                                 src="<?= htmlspecialchars($huitre['img']) ?>"
@@ -11,8 +11,8 @@
                 <div class="article-body flex-1-item-perline-s flex-2-item-perline-m">
                         <h1 class="text-center"><?= htmlspecialchars($huitre['h_name']) ?></h1>
                         <p class="article-text"><?= htmlspecialchars($huitre['h_content']) ?></p>
+                        <!-- start oyster tast note by svg -->
                         <div class="container__progressbars">
-
                                 <div class="progressbar">
                                         <svg class="progressbar__svg">
                                                 <circle cx="40" cy="40" r="35" class="progressbar__svg-circle circle-1">
@@ -20,7 +20,6 @@
                                         </svg>
                                         <span class="progressbar__text">IODE</span>
                                 </div>
-
                                 <div class="progressbar">
                                         <svg class="progressbar__svg">
                                                 <circle cx="40" cy="40" r="35" class="progressbar__svg-circle circle-2">
@@ -28,7 +27,6 @@
                                         </svg>
                                         <span class="progressbar__text">CHARNUE</span>
                                 </div>
-
                                 <div class="progressbar">
                                         <svg class="progressbar__svg">
                                                 <circle cx="40" cy="40" r="35" class="progressbar__svg-circle circle-3">
@@ -37,8 +35,11 @@
                                         <span class="progressbar__text">SUCREE</span>
                                 </div>
                         </div>
+                        <!-- end of oyster tast note by svg -->
+<!-- end of the oyster description -->
+
                         <h2>Liste de Producteurs</h2>
-                        <!-- foreach producors who get the good huitre id -->
+<!-- start foreach producers detail who get the good huitre id -->
                         <div class="huitre-page-producors flex-wrapper">
                                 <?php foreach($producers as $producer){?>
                                 <div
@@ -55,11 +56,11 @@
                                 </div>
                                 <?php } ?>
                         </div>
+<!-- end of producers detail-->
                 </div>
         </div>
 </section>
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

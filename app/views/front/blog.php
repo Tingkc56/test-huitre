@@ -1,9 +1,8 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
 
 <section class="blog">
     <h1 class="text-center">Blog</h1>
-        <!-- nav category -->
+ <!-- start nav category for blog-->
     <header id="headerblog">
             <nav id="nav-categories" class="nav nav-category">
                 <button class="btn active" onclick="filter('tout')" id="tout"> tout</button>
@@ -12,10 +11,15 @@
                 <button class="btn" onclick="filter('tourisme')" id="tourisme"> tourisme</button>
             </nav>
     </header>
+ <!-- end of nav category for blog-->
+
+ <!-- start foreach all articles -->
     <div class="flex-wrapper">
         <?php foreach($allArticles as $allArticle){?>
         <div class="<?=htmlspecialchars($allArticle['category']) ?> blogArticle flex-1-item-perline-s flex-1-item-perline-m flex-3-item-perline-l">
-            <article class="case">
+ 
+        <!-- start one article -->
+        <article class="case">
                 <div class="case-img-container">
                     <img class="case-img-top" src="<?=htmlspecialchars($allArticle['img']) ?>"
                         alt="<?=htmlspecialchars($allArticle['title']) ?>">
@@ -27,12 +31,13 @@
                         class="btn">Lire plus</a>
                 </div>
             </article>
+            <!-- end of one article -->
         </div>
         <?php } ?>
     </div>
+<!-- start foreach all articles -->
 </section>
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

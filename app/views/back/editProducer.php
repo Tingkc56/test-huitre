@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 <section class="edit-producer">
         <h1 class="text-center" >Editer producteur</h1>
-
+<!-- start edit producer -->
         <form class="text-center" action="hbAdmin.php?action=updateProducer&id=<?= $producer['id'] ?>" enctype="multipart/form-data" method="post">
 
                     <label for="name">Nom</label>
@@ -10,7 +10,7 @@
                     <input class="form-item" type="text" id="tel" name="tel" value="<?= htmlspecialchars($producer['tel']) ?>">
                     <label for="adresse">Adresse</label>
                     <textarea class="form-item" class="adresse" name="adresse" id="adresse" cols="30" rows="5"><?= htmlspecialchars($producer['adresse']) ?></textarea>
-
+    <!-- start chose oyster type of the producer -->
                 <div class="select-producer text-center">
                     <label for="select-producer">Ses huitres</label>
                     <select class="form-item" name="huitre_n" id="select-producer">
@@ -19,6 +19,7 @@
                 <?php } ?>
                 </select>
                 </div>
+    <!-- end of chose oyster type of the producer -->
 
 
                     <textarea class="form-item content m-top-5" name="content" id="content" cols="30" rows="10"><?= htmlspecialchars($producer['p_content']) ?></textarea>
@@ -34,14 +35,13 @@
 
                     <div class="text-center m-top-5">
                     <input type="submit" class="btn yellow-btn " name="submit" id="upload">
-                </div>
+                    </div>
         </form>
-    </div>
+<!-- end of edit producer -->
 
 </section>
 
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

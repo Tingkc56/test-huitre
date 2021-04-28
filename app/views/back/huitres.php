@@ -3,13 +3,11 @@
 <section>
 
         <h1 class="text-center" >Gérer vos huitres</h1>
-
-
         <div class="text-center">
             <a class="btn green-btn" href="hbAdmin.php?action=addHuitre">Ajouter huitre</a>
         </div>
-        <br>
         <div class="admin-huitre">
+            <!-- start show oyster list -->
                 <?php foreach($allHuitres as $allHuitre){?>
                     <article class="case">
                         <div class="case-img flex-1-item-perline-s flex-2-item-perline-m text-center">
@@ -28,12 +26,11 @@
                         </div>  
                     </article>
                  <?php } ?>
-                </div>
-
+            <!-- end of show oyster list -->
+        </div>
 </section>
 
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

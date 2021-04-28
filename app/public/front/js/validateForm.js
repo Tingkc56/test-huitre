@@ -21,7 +21,7 @@ function validateSignUp(){
      //check the email format
      var mail=document.querySelector(".form-mail").value;
      var reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
-    console.log(mail);
+    //console.log(mail);
      if (!reg.test(mail)){  
          alert("l'adresse mail n'est pas valide");
          return false;
@@ -29,7 +29,7 @@ function validateSignUp(){
 
     //check password length
      var psws=document.querySelectorAll(".psw");
-     console.log(psws);
+     //console.log(psws);
 
      for (var psw of psws){
      if(psw.value.length<6){
@@ -65,7 +65,7 @@ function validateSignIn(){
        //check the email format
        var mail=document.querySelector(".mail").value;
        var reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
-      console.log(mail);
+      //console.log(mail);
        if (!reg.test(mail)){  
            alert("l'adresse mail n'est pas valide");
            return false;
@@ -75,7 +75,7 @@ function validateSignIn(){
 
 function formConditionCheck(){
   var checkbox =document.getElementById('condition');
-  console.log(checkbox);
+  //console.log(checkbox);
   //If the checkbox has been checked
   if(checkbox.checked){
       //Enable the button.
@@ -98,7 +98,7 @@ function validateContact(){
        //check the email format
        var mail=document.querySelector(".form-mail").value;
        var reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
-      console.log(mail);
+     // console.log(mail);
        if (!reg.test(mail)){  
            alert("l'adresse mail n'est pas valide");
            return false;

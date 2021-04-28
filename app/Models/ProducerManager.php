@@ -6,7 +6,7 @@ class ProducerManager extends Manager{
 
     public function getproducers(){
         $bdd = $this->bdConnect();
-        $req = $bdd->query('SELECT * FROM producers');
+        $req = $bdd->query('SELECT id, alt, p_name, img, adresse, tel, p_content, huitre_id  FROM producers');
         return $req;
     }
 

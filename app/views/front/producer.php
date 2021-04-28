@@ -1,7 +1,6 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
 <section class="producer text-center">
-
+<!-- start the producer description -->
     <div class="article-page">
         <div class="article-img flex-1-item-perline-s flex-2-item-perline-m">
             <img class="img-fluid img-br-10px" src="<?= htmlspecialchars($producer['img']) ?>"
@@ -17,10 +16,9 @@
             <p class="article-text"><?= htmlspecialchars($producer['p_content']) ?></p>
         </div>
     </div>
-
+<!-- end of the producer description -->
 </section>
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

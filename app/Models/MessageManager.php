@@ -3,7 +3,6 @@ namespace Project\Models;
 
 class MessageManager extends Manager{
 
-    //connection Users
     public function getMessage($name,$mail,$sujet,$message){
         $bdd = $this->bdConnect();
         $req = $bdd->prepare('INSERT INTO messages(mname,mail,sujet,amessage) VALUES (?,?,?,?)');
@@ -13,7 +12,7 @@ class MessageManager extends Manager{
 
     public function showMessages(){
         $bdd = $this->bdConnect();
-        $req = $bdd->query('SELECT * FROM messages ORDER BY id DESC' );
+        $req = $bdd->query('SELECT id, mname, time, mail, sujet, amessage FROM messages ORDER BY id DESC' );
         return $req;
     }
 

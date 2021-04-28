@@ -9,7 +9,7 @@
         </div>
         <br>
         <div class="admin-blog">
-            <!-- foreach all articles -->
+<!-- start foreach all articles -->
         <?php foreach($allArticles as $allArticle){?>
                     <article class="case">
                         <div class="case-img flex-1-item-perline-s flex-2-item-perline-m text-center">
@@ -29,11 +29,11 @@
                         </div>  
                     </article>
                  <?php } ?>
+<!-- end of foreach all articles -->
                 </div>
 </section>
 
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

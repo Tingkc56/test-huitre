@@ -7,7 +7,7 @@
  if(address){
   address.addEventListener('input',function(){
     let addressUrl = address.value.split(" ").join('+');
-    console.log(addressUrl);  
+    //console.log(addressUrl);  
    // fetch
    fetch(`https://api-adresse.data.gouv.fr/search/?q=${addressUrl}&limit=6`)
    .then(Response => Response.json())

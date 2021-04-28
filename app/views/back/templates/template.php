@@ -18,7 +18,7 @@
 
 <body>
 
-    <!-- navbar -->
+<!-- start navbar -->
     <header>
         <div class="navbar-background">
             <nav class="navbar flex-wrapper">
@@ -53,15 +53,18 @@
             </nav>
             <div class="nav-bottom-line"></div>
         </div>
-
     </header>
+<!-- end of navbar -->
 
+<!-- start main pages -->
     <main>
         <div class="container right-container">
             <?= $content ?>
         </div>
     </main>
+<!-- end of main pages -->
 
+<!-- start footer -->
     <footer>
             <div class="container admin-footer">
                 <p class="foot-mention">&copy; Huitre Bretagne 2021. Conditions générales d’utilisation et <a
@@ -69,6 +72,8 @@
             </div>
         </div>
     </footer>
+<!-- send of footer -->
+
     <!-- js -->
     <script src="app\public\front\js\validateForm.js"></script>
     <script src="app\public\front\js\categoryBlog.js"></script>

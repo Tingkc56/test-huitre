@@ -1,5 +1,5 @@
 <?php ob_start(); ?>
-<!-- fonction php pour injecter le header -->
+
 
 <section class="mention user-info m-auto text-center">
     <h1>Mentions légales</h1>
@@ -439,5 +439,4 @@
 
 
 <?php $content = ob_get_clean(); ?>
-<!-- fonction php pour injecter le template -->
 <?php require 'templates/template.php'; ?>

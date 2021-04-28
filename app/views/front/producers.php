@@ -4,6 +4,7 @@
 <section class="producers">
     <h1 class="text-center">Nos producteurs</h1>
     <div class="flex-wrapper">
+        <!-- start foreach every producer -->
         <?php foreach($producers as $producer){?>
         <div class="flex-1-item-perline-s flex-2-item-perline-m flex-4-item-perline-l">
             <article class="case">
@@ -21,6 +22,7 @@
             </article>
         </div>
         <?php } ?>
+        <!-- end of foreach every producer -->
     </div>
 </section>
 

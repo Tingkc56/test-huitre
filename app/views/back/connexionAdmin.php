@@ -13,8 +13,7 @@
 <body>
 
     <div class="container">
-
-
+<!-- start connection admin -->
         <section id="connexion-admin" class="connexion-admin m-auto">
             <h1 class="text-center">Connexion Admin Huitre Bretagne</h1>
             <form id="sign-in-admin" action="hbAdmin.php?action=connexionAdmin" method="post">
@@ -29,6 +28,7 @@
             </form>
                 <a class="btn" href="/">Retour a l'accueil</a>
         </section>
+<!-- end of connection admin -->
     </div>
 </body>
 
