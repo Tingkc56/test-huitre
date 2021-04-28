@@ -3,9 +3,10 @@
 <!-- start head -->
 <head>
     <meta charset="UTF-8">
+    <title>Huîltre Bretagne|ostréiculteur breton|meilleur huitre breton</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content="" >
     <meta name="description" content="Huitre Bretagne : Envie d’huitres ? Besoins de  recettes ? Adepte ou junior ? C’est par ici !  Le meilleur de l’huitre made in BZH  en collaboration avec vos producteurs bretons préférés.">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,8 +17,6 @@
     <link rel="stylesheet" href="app/public/front/css/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="app/public/front/images/favicon.ico">
-
-    <title>Huîltre Bretagne</title>
 </head>
 <!-- end of head -->
 
