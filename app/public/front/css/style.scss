@@ -512,10 +512,11 @@ $porcent-3: 80;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  min-width: 40vw;
+  max-width: 40vw;
   width: 100%;
   max-height: 25%;
   margin-top: -15%;
+  margin-left: -6%;
 }
 
 .progressbar {
