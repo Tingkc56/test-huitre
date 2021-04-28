@@ -5,7 +5,7 @@ use Project\Controllers\Back\BackController;
 
 session_start();
 
-
+// if local, use .env
 if($_SERVER['HTTP_HOST'] !=  "test-huitre.herokuapp.com") {
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
@@ -26,7 +26,7 @@ try{
                 throw new Exception('Renseigner vos identifiant');
             }
         }
-
+        //if not login -> can not log the pages, return to the login page
         if($_SESSION){  
         if($_GET['action'] == 'accueilAdmin'){
             $backController ->accueilAdmin();
@@ -35,8 +35,8 @@ try{
         elseif($_GET['action'] == 'deconnexion'){
             $backController ->deconnexion();
         }
-        
-        //les articles
+
+        // articles
         elseif($_GET['action'] == 'articles'){
             $backController-> articles();
         }
@@ -51,7 +51,6 @@ try{
             $content = htmlspecialchars($_POST['content']) ;
             $alt = htmlspecialchars($_POST['alt']);
             $target_file = htmlspecialchars($_POST['img']);
-            //var_dump($target_file);
      
             $backController ->updateArticle($id,$title,$category,$content,$alt,$target_file);
         }
@@ -78,8 +77,7 @@ try{
         }
         
 
-        //les huitres
-
+        //oysters
         elseif($_GET['action'] == 'huitres'){
             $backController-> huitres();
         }
@@ -118,7 +116,7 @@ try{
             $backController-> deleteHuitre($id);
         }
 
-        //les producteurs
+        //producers
 
         elseif($_GET['action'] == 'producers'){
             $backController-> producers();
@@ -163,7 +161,7 @@ try{
         }
 
 
-        // les messages
+        //messages
 
         elseif($_GET['action'] == 'messages'){
             $backController-> messages();
@@ -174,6 +172,7 @@ try{
             $backController-> deletMessage($id);
         }
 
+        // comments
         elseif($_GET['action'] == 'commentaires'){
             $backController-> comments();
         }

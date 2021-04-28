@@ -7,10 +7,10 @@
                     <label for="title">Nom de Huitre</label>
                     <input  class="form-item" type="text" id="title" name="title">
 
-                    <label for="content">Description de Huitre</label><br>
+                    <label for="content">Description de Huitre</label> 
                     <textarea  class="form-item" class="content" name="content" id="content" cols="30" rows="10"></textarea>
 
-                    <label for="alt">alt d'image</label><br>
+                    <label for="alt">alt d'image</label> 
                     <input  class="form-item" type="text" id="alt" name="alt">
 
                     <input type="file" class="img" name="img">

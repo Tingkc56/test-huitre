@@ -19,7 +19,7 @@
 
     <p> Numéro de téléphone : +33 68 68 68 68</p>
     <p><b>Client :</b> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code
-        civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
+        civil, ou personne morale, qui visite le Site objet des présentes conditions générales. 
         <b>Prestations et Services :</b> <a
             href="https://test-huitre.herokuapp.com/">https://test-huitre.herokuapp.com/</a> met à disposition des
         Clients :</p>
@@ -46,13 +46,13 @@
             href="https://test-huitre.herokuapp.com/">https://test-huitre.herokuapp.com/</a> l'identité des différents
         intervenants dans le cadre de sa réalisation et de son suivi:
     </p>
-    <p><strong>Propriétaire</strong> : ting.kc – 5 rue du commerce 56000 vannes<br>
+    <p><strong>Propriétaire</strong> : ting.kc – 5 rue du commerce 56000 vannes 
 
-        <strong>Responsable publication</strong> : ting.kc – info@huitrebretagne.fr<br>
-        Le responsable publication est une personne physique ou une personne morale.<br>
-        <strong>Webmaster</strong> : ting.kc – info@huitrebretagne.fr<br>
-        <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix 1007<br>
-        <strong>Délégué à la protection des données</strong> : ting.kc – info@huitrebretagne.fr<br>
+        <strong>Responsable publication</strong> : ting.kc – info@huitrebretagne.fr 
+        Le responsable publication est une personne physique ou une personne morale. 
+        <strong>Webmaster</strong> : ting.kc – info@huitrebretagne.fr 
+        <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix 1007 
+        <strong>Délégué à la protection des données</strong> : ting.kc – info@huitrebretagne.fr 
     </p>
 
     <h2>2. Conditions générales d’utilisation du site et des services proposés.</h2>
@@ -243,7 +243,7 @@
             href="https://test-huitre.herokuapp.com/">https://test-huitre.herokuapp.com/</a> par écrit à l’adresse
         suivante : </p>
 
-    ting.kc – DPO, ting.kc <br>
+    ting.kc – DPO, ting.kc  
     5 rue du commerce 56000 vannes.
 
     <p>Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que <a

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
     <meta name="description" content="Huitre Bretagne : Envie d’huitres ? Besoins de  recettes ? Adepte ou junior ? C’est par ici !  Le meilleur de l’huitre made in BZH  en collaboration avec vos producteurs bretons préférés.">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -110,7 +111,7 @@
                     <h4>Ma newsletter</h4>
                     <p>Retrouvez tous les mois nos infos, articles, recettes et nouveautés. Produits 100% BIO !</p>
                     <form method="POST">
-                        <input type="email" name="email" placeholder="Votre Email..."><br>
+                        <input type="email" name="email" placeholder="Votre Email..."> 
                         <input class="btn gold-btn" type="submit" value="Je m'inscris">
                     </form>
                 </div>

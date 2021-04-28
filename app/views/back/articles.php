@@ -7,7 +7,7 @@
         <div class="text-center">
             <a class="btn green-btn" href="hbAdmin.php?action=addArticle">Créer un nouvel article</a>
         </div>
-        <br>
+         
         <div class="admin-blog">
 <!-- start foreach all articles -->
         <?php foreach($allArticles as $allArticle){?>

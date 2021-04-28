@@ -7,10 +7,10 @@
                 <label for="name">Nom de Producteur</label>
                 <input  class="form-item" type="text" id="name" name="name">
 
-                    <label for="adresse">Son adresse</label><br>
+                    <label for="adresse">Son adresse</label> 
                     <textarea   class="form-item" name="adresse" id="adresse" cols="30" rows="4"></textarea>
 
-                    <label for="content">Son numero de telephone</label><br>
+                    <label for="content">Son numero de telephone</label> 
                     <input class="form-item"  type="text" id="tel" name="tel">
 <!-- chose the producer's oyster type -->
                 <div class="select-producer text-center">
@@ -23,7 +23,7 @@
                 </div>
 <!-- end of chose the producer's oyster type -->
 
-                    <label for="content">Presentation de producteur</label><br>
+                    <label for="content">Presentation de producteur</label> 
                     <textarea  class="form-item" class="content" name="content" id="content" cols="30" rows="10"></textarea>
                     <label for="alt">alt d'image</label>
                     <input  class="form-item" type="text" id="alt" name="alt">

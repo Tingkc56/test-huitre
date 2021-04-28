@@ -9,7 +9,7 @@
                 <div class="flex-1-item-perline-s flex-2-item-perline-m flex-3-item-perline-l">
             <article class="case">
                 <div class="case-body">
-                    <h4 class="case-title">Commentaire pour: <br><?=htmlspecialchars($allComment['title']) ?></h4>
+                    <h4 class="case-title">Commentaire pour:  <?=htmlspecialchars($allComment['title']) ?></h4>
                     <h5>Par :<?=htmlspecialchars($allComment['nom']) ?></h5>
                     <h5>Recu : <?=htmlspecialchars($allComment['cmt_time']) ?></h5> 
                     <p class="case-text"><strong>Commentaire :</strong><?=htmlspecialchars($allComment['content']) ?></p>
