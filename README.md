@@ -4,7 +4,7 @@ Huitre Bretagne
 Vous êtes en Bretagne? Alors envie de huitre frais? 
 
 C'est un guide des ostréiculteurs bretons.
-Aussi un petit blog concernant les recettes de huitre, guide de tourisme...
+Aussi un petit blog concernant les recettes de huitre, info de tourisme...
 
 A travers de notre site, vous pouvez trouver les bonnes adresses que vous souhaitez! 
 Par les différents type de huitre, ou par l'adresse de producteur.

@@ -27,7 +27,7 @@
             <nav class="navbar container flex-wrapper">
                 <!-- logo -->
                 <div><a href="/" class="nav-logo"><img class="logo img-br-10px"
-                            src="app/public/front/images/huitre-bretagne.png" alt="huitre bretagne"><span
+                            src="app/public/front/images/huitre-bretagne.png" alt="logo huitre de bretagne"><span
                             class="text-logo">HUITRE BRETAGNE</span> </a> 
                 </div>
                 <!-- nav burger icon -->

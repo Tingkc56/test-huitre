@@ -82,9 +82,9 @@
 <!-- send of footer -->
 
     <!-- js -->
-    <script src="app\public\front\js\validateForm.js"></script>
-    <script src="app\public\front\js\categoryBlog.js"></script>
-    <script src="app\public\front\js\burger.js"></script>
+    <script src="app/public/front/js/validateForm.js"></script>
+    <script src="app/public/front/js/categoryBlog.js"></script>
+    <script src="app/public/front/js/burger.js"></script>
 
 </body>
 
