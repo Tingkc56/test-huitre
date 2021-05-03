@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style sheet -->
-    <link rel="stylesheet" href="app\public\back\css\style.css">
+    <link rel="stylesheet" href="app/public/back/css/style.css">
     <title>Connexion Admin</title>
 </head>
 
