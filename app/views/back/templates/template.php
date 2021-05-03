@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <!-- style sheet -->
-    <link rel="stylesheet" href="app\public\back\css\style.css">
+    <link rel="stylesheet" href="app/public/back/css/style.css">
 
     <title>Admini</title>
 </head>
