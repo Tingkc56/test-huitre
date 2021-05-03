@@ -1,5 +1,4 @@
 
-* test de vitess, test de w3school
 * readme
 
 bugs:

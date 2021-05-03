@@ -948,6 +948,7 @@ contact
 .contact .btn:disabled {
   border: 1px solid grey;
   color: grey;
+  background-color: #ccc9c9;
   cursor: default;
 }
 

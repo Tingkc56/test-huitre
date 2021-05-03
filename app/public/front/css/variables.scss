@@ -28,4 +28,5 @@ $italicfont:'Dancing Script', cursive;
 @mixin disabledbutton{
     border: 1px solid grey;
     color: grey;
+    background-color: rgb(204, 201, 201);
 }
