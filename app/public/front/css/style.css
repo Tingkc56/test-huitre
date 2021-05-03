@@ -946,9 +946,9 @@ contact
   margin-top: 2%;
 }
 .contact .btn:disabled {
-  border: 1px solid grey;
+  border: 1px solid #e2e0e0;
   color: grey;
-  background-color: #ccc9c9;
+  background-color: #e2e0e0;
   cursor: default;
 }
 
