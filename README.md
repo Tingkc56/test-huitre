@@ -1,14 +1,13 @@
 Huitre Bretagne
 
 
-Vous êtes en Bretagne? Alors envie de huitre frais? 
 
-C'est un guide des ostréiculteurs bretons.
-Aussi un petit blog concernant les recettes de huitre, info de tourisme...
+Vous êtes en Bretagne? Alors envie d'huîtres? 
 
-A travers de notre site, vous pouvez trouver les bonnes adresses que vous souhaitez! 
-Par les différents type de huitre, ou par l'adresse de producteur.
-(Nous allons améliorer notre site plus tards pour mettre à jours tous les ostéiculteurs bretons et nous voudrons que un jour, les utilisateurs de notre site peuvent réserver et être livrés.)
+Ce site constitue un guide des bonnes adresses des ostréiculteurs bretons.
+On y trouve aussi un blog avec des recettes et des infos sur les différentes types d'huîtres.
+
+(Nous allons améliorer notre site plus tard afin de référencer le maximum de producteurs bretons. Nous espérons à l'avenir proposer aux utilisateurs de notre site la possibilité de réserver et d'être livré .)
  
 Voilà notre site: https://test-huitre.herokuapp.com
 

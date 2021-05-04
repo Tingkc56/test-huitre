@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
 <section class="huitres">
-<h1 class="text-center" >Nos variétés des Huitres</h1>
+<h1 class="text-center" >Nos variétés des Huîtres</h1>
 <div class="flex-wrapper">
 <!-- start list of oysters -->
 <?php foreach($huitres as $huitre){?>
