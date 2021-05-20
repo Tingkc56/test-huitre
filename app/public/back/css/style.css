@@ -99,7 +99,7 @@ styles variables
 */
 /* 
 ---------------------------------------------
-global styles
+global styles -- tingting
 --------------------------------------------- 
 */
 .container {
@@ -305,6 +305,7 @@ global styles
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .circular-thumbnail-img img {
@@ -604,6 +605,48 @@ global styles
   padding: 0.75rem;
 }
 
+/* ------ cookie --------------------------------------*/
+#cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+#cookie-bar .cookie-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  min-height: 15vh;
+  background: #f1f1f1;
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f9f9f9;
+}
+#cookie-bar .cookie-container .cookie-content {
+  padding: 15px;
+  width: 80%;
+  vertical-align: middle;
+}
+#cookie-bar .cookie-container .cookie-content .cookie-link {
+  text-decoration: underline;
+  color: #c2912a;
+  font-weight: bold;
+}
+#cookie-bar .cookie-container .cookie-close-link {
+  padding: 1%;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background-color: #c2912a;
+  top: 20%;
+  right: 10%;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* ------  general set*/
 .show {
   display: flex;
 }
@@ -705,7 +748,7 @@ admin navbar
 }
 
 .navbar-toggler-icon {
-  color: #c2912a;
+  fill: #c2912a;
   font-size: 3rem;
 }
 
@@ -742,6 +785,11 @@ admin acceuil
 .admin-accueil a {
   color: #c2912a;
   font-size: 1.2rem;
+}
+
+.infosCode {
+  margin-top: 8%;
+  width: 80%;
 }
 
 /* ------ admin-huitre -----*/

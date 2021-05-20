@@ -18,4 +18,3 @@ Site Web réalisé en :HTML (SVG+SEO) / SASS / JavaScript (API/formvalidator) / 
 
 
 Enjoy french Oyster! 
-

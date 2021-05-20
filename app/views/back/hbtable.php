@@ -23,7 +23,11 @@
                         <li >
                             <a href="hbAdmin.php?action=deconnexion">Deconnexion</a>
                         </li>
-                    </ul>
+        </ul>
+
+        <div class="infosCode text-center m-auto">
+                <h3>Veuillez <strong><a href="https://github.com/Tingkc56/test-huitre">cliquez ici</a></strong>  pour voir mes codes sur Github.</h3>
+        </div>
 </section>
 
 <?php $content = ob_get_clean(); ?>
