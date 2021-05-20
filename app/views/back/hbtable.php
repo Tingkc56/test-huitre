@@ -26,7 +26,7 @@
         </ul>
 
         <div class="infosCode text-center m-auto">
-                <h3>Veuillez <strong><a href="https://github.com/Tingkc56/test-huitre">cliquer ici</a></strong>  pour accéder à mes codes sur Github.</h3>
+                <h3>Veuillez <strong><a href="https://github.com/Tingkc56/test-huitre" target="_blank">cliquer ici</a></strong>  pour accéder à mes codes sur Github.</h3>
         </div>
 </section>
 
