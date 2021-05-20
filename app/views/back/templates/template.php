@@ -37,7 +37,7 @@
                 </div>
                 <div class="navbar-admin navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-ul">
-                        <li class="nav-li welcome-message">Bienvenu <?= $_SESSION['name'] ?></li>
+                        <li class="nav-li welcome-message">Bienvenue <?= $_SESSION['name'] ?></li>
                         <li class="nav-li"><a class="nav-a"
                                 href="hbAdmin.php?action=accueilAdmin">Accueil</a></li>
                         <li class="nav-li"><a class="nav-a" href="hbAdmin.php?action=messages">Gérer
